@@ -9,7 +9,7 @@ This repository contains the public code and final outputs for a crop double wat
 
 ## Code structure
 
-The original notebooks are not kept in this GitHub repository because they are large and hard to review. Their logic has been exported and split into staged scripts:
+Their logic has been exported and split into staged scripts:
 
 1. preprocessing and NetCDF preparation
 2. data loading and yield-loss metrics
@@ -17,8 +17,4 @@ The original notebooks are not kept in this GitHub repository because they are l
 4. country/trade/risk analysis
 5. validation workflows
 
-## Reuse notes
 
-The scripts preserve the analysis logic used for the manuscript, but several paths still point to local disks used during the original computation. Before rerunning the workflow elsewhere, update the path blocks and verify NetCDF dimensions, units, masks, and time coordinates.
-
-One very large archival PDF is omitted from GitHub; compact PDF/PNG versions are included in the same result folder.
