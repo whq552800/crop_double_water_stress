@@ -1,0 +1,9 @@
+﻿level,crop,hazard,observed_loss,simulated_loss,year_min,year_max,n,pearson_r,rmse_pct,mean_bias_pct_points,median_bias_pct_points
+country,maiz,dry,obs_loss_pct,sim_yield_anomaly_loss_pct,1980,2019,583,0.4532718555392353,7.254578948707692,-2.821421271753237,0.0
+country,maiz,wet,obs_loss_pct,sim_yield_anomaly_loss_pct,1980,2019,409,0.1098781161920579,5.588801695444855,-2.142701689201387,0.0
+country,soyb,dry,obs_loss_pct,sim_yield_anomaly_loss_pct,1980,2019,306,0.3084987756433389,10.700321332017419,-3.9383793056847005,0.0
+country,soyb,wet,obs_loss_pct,sim_yield_anomaly_loss_pct,1980,2019,244,-0.06221691703242292,8.049091846195893,-2.992145406386025,0.0
+country,rice,dry,obs_loss_pct,sim_yield_anomaly_loss_pct,1980,2019,484,-0.03447636002491633,6.6111501428922885,-1.403582673747194,0.0
+country,rice,wet,obs_loss_pct,sim_yield_anomaly_loss_pct,1980,2019,387,-0.03297604495676854,5.860879570277763,-0.9576880790194676,0.0
+country,whea,dry,obs_loss_pct,sim_yield_anomaly_loss_pct,1980,2019,708,0.19049770456435286,8.664224894380032,-3.8167396217981278,0.0
+country,whea,wet,obs_loss_pct,sim_yield_anomaly_loss_pct,1980,2019,617,0.15850046037994447,8.87687815271058,-3.965402893398606,0.0

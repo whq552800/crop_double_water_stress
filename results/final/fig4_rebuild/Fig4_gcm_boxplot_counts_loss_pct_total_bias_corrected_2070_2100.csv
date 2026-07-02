@@ -1,0 +1,17 @@
+﻿scenario,crop,hazard,n_gcm,min_years,max_years
+ssp126,maiz,dry,10,31,31
+ssp126,maiz,wet,10,31,31
+ssp126,rice,dry,10,31,31
+ssp126,rice,wet,10,31,31
+ssp126,soyb,dry,10,31,31
+ssp126,soyb,wet,10,31,31
+ssp126,whea,dry,10,31,31
+ssp126,whea,wet,10,31,31
+ssp585,maiz,dry,10,31,31
+ssp585,maiz,wet,10,31,31
+ssp585,rice,dry,10,31,31
+ssp585,rice,wet,10,31,31
+ssp585,soyb,dry,10,31,31
+ssp585,soyb,wet,10,31,31
+ssp585,whea,dry,10,31,31
+ssp585,whea,wet,10,31,31

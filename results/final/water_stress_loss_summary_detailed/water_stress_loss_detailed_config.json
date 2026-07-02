@@ -1,0 +1,34 @@
+{
+  "loss_definition_total": "max(no-water-stress production - water-stress production, 0)",
+  "loss_pct_denominator": "no-water-stress production",
+  "hazard_specific_definition": "Total counterfactual water-stress loss in grid cells/years where drystress or wetstress annual days are >= threshold; dry and wet categories can overlap if both event masks occur.",
+  "stress_threshold_days": 7.0,
+  "periods": {
+    "historical_1990_2019": [
+      1990,
+      2019
+    ],
+    "future_2070_2100": [
+      2070,
+      2100
+    ]
+  },
+  "historical_run": "gswp3_long",
+  "future_gcms": [
+    "CanESM5",
+    "CNRM-CM6-1",
+    "CNRM-ESM2-1",
+    "EC-Earth3",
+    "GFDL-ESM4",
+    "IPSL-CM6A-LR",
+    "MIROC6",
+    "MPI-ESM1-2-HR",
+    "MRI-ESM2-0",
+    "UKESM1-0-LL"
+  ],
+  "scenarios_available": [
+    "ssp126",
+    "ssp585"
+  ],
+  "note": "Period summaries first average each complete GCM-period sample, then report mean, sample SD and normal-approximation 95% CI across GCM samples. Historical has one GSWP3 sample; use gcm_period table for its period mean, and annual_detailed for year-to-year variability."
+}

@@ -1,0 +1,271 @@
+﻿scenario,period,year_min,year_max,crop,crop_label,mode,mode_label,hazard,hazard_label,metric,n_samples,mean,sd,ci95_low,ci95_high,mean_sd_ci
+historical,historical_1990_2019,1990,2019,all4,All four crops,Irr,Irrigated,dry,Drought stress,loss_pct,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,all4,All four crops,Irr,Irrigated,dry,Drought stress,loss_million_tonnes,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,all4,All four crops,Irr,Irrigated,total,Total water stress,loss_pct,1,1.9727424739557013,,,,1.973
+historical,historical_1990_2019,1990,2019,all4,All four crops,Irr,Irrigated,total,Total water stress,loss_million_tonnes,1,6.807479492017604,,,,6.807
+historical,historical_1990_2019,1990,2019,all4,All four crops,Irr,Irrigated,wet,Waterlogging stress,loss_pct,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,all4,All four crops,Irr,Irrigated,wet,Waterlogging stress,loss_million_tonnes,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,all4,All four crops,nonIrr,Rainfed,dry,Drought stress,loss_pct,1,1.1990609812875215,,,,1.199
+historical,historical_1990_2019,1990,2019,all4,All four crops,nonIrr,Rainfed,dry,Drought stress,loss_million_tonnes,1,18.743984580183202,,,,18.744
+historical,historical_1990_2019,1990,2019,all4,All four crops,nonIrr,Rainfed,total,Total water stress,loss_pct,1,1.6048733302188958,,,,1.605
+historical,historical_1990_2019,1990,2019,all4,All four crops,nonIrr,Rainfed,total,Total water stress,loss_million_tonnes,1,25.099569570544983,,,,25.100
+historical,historical_1990_2019,1990,2019,all4,All four crops,nonIrr,Rainfed,wet,Waterlogging stress,loss_pct,1,0.4278298287772892,,,,0.428
+historical,historical_1990_2019,1990,2019,all4,All four crops,nonIrr,Rainfed,wet,Waterlogging stress,loss_million_tonnes,1,6.695646121989913,,,,6.696
+historical,historical_1990_2019,1990,2019,all4,All four crops,total,Total,dry,Drought stress,loss_pct,1,0.9822369219958186,,,,0.982
+historical,historical_1990_2019,1990,2019,all4,All four crops,total,Total,dry,Drought stress,loss_million_tonnes,1,18.743984580183202,,,,18.744
+historical,historical_1990_2019,1990,2019,all4,All four crops,total,Total,total,Total water stress,loss_pct,1,1.6713681570200072,,,,1.671
+historical,historical_1990_2019,1990,2019,all4,All four crops,total,Total,total,Total water stress,loss_million_tonnes,1,31.907049062562585,,,,31.907
+historical,historical_1990_2019,1990,2019,all4,All four crops,total,Total,wet,Waterlogging stress,loss_pct,1,0.3504481781741137,,,,0.350
+historical,historical_1990_2019,1990,2019,all4,All four crops,total,Total,wet,Waterlogging stress,loss_million_tonnes,1,6.695646121989913,,,,6.696
+historical,historical_1990_2019,1990,2019,maiz,Maize,Irr,Irrigated,dry,Drought stress,loss_pct,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,maiz,Maize,Irr,Irrigated,dry,Drought stress,loss_million_tonnes,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,maiz,Maize,Irr,Irrigated,total,Total water stress,loss_pct,1,2.522994012585608,,,,2.523
+historical,historical_1990_2019,1990,2019,maiz,Maize,Irr,Irrigated,total,Total water stress,loss_million_tonnes,1,3.021267724357489,,,,3.021
+historical,historical_1990_2019,1990,2019,maiz,Maize,Irr,Irrigated,wet,Waterlogging stress,loss_pct,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,maiz,Maize,Irr,Irrigated,wet,Waterlogging stress,loss_million_tonnes,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,maiz,Maize,nonIrr,Rainfed,dry,Drought stress,loss_pct,1,1.3229753737895142,,,,1.323
+historical,historical_1990_2019,1990,2019,maiz,Maize,nonIrr,Rainfed,dry,Drought stress,loss_million_tonnes,1,5.747335908288397,,,,5.747
+historical,historical_1990_2019,1990,2019,maiz,Maize,nonIrr,Rainfed,total,Total water stress,loss_pct,1,1.8519243610014167,,,,1.852
+historical,historical_1990_2019,1990,2019,maiz,Maize,nonIrr,Rainfed,total,Total water stress,loss_million_tonnes,1,8.047357401956068,,,,8.047
+historical,historical_1990_2019,1990,2019,maiz,Maize,nonIrr,Rainfed,wet,Waterlogging stress,loss_pct,1,0.5166767499066188,,,,0.517
+historical,historical_1990_2019,1990,2019,maiz,Maize,nonIrr,Rainfed,wet,Waterlogging stress,loss_million_tonnes,1,2.2465240047217874,,,,2.247
+historical,historical_1990_2019,1990,2019,maiz,Maize,total,Total,dry,Drought stress,loss_pct,1,1.037335885357162,,,,1.037
+historical,historical_1990_2019,1990,2019,maiz,Maize,total,Total,dry,Drought stress,loss_million_tonnes,1,5.747335908288397,,,,5.747
+historical,historical_1990_2019,1990,2019,maiz,Maize,total,Total,total,Total water stress,loss_pct,1,1.9969697434003442,,,,1.997
+historical,historical_1990_2019,1990,2019,maiz,Maize,total,Total,total,Total water stress,loss_million_tonnes,1,11.068625126313556,,,,11.069
+historical,historical_1990_2019,1990,2019,maiz,Maize,total,Total,wet,Waterlogging stress,loss_pct,1,0.40475657998247316,,,,0.405
+historical,historical_1990_2019,1990,2019,maiz,Maize,total,Total,wet,Waterlogging stress,loss_million_tonnes,1,2.2465240047217874,,,,2.247
+historical,historical_1990_2019,1990,2019,rice,Rice,Irr,Irrigated,dry,Drought stress,loss_pct,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,rice,Rice,Irr,Irrigated,dry,Drought stress,loss_million_tonnes,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,rice,Rice,Irr,Irrigated,total,Total water stress,loss_pct,1,2.411178201313346,,,,2.411
+historical,historical_1990_2019,1990,2019,rice,Rice,Irr,Irrigated,total,Total water stress,loss_million_tonnes,1,2.3333824124988265,,,,2.333
+historical,historical_1990_2019,1990,2019,rice,Rice,Irr,Irrigated,wet,Waterlogging stress,loss_pct,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,rice,Rice,Irr,Irrigated,wet,Waterlogging stress,loss_million_tonnes,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,rice,Rice,nonIrr,Rainfed,dry,Drought stress,loss_pct,1,0.25794643838856557,,,,0.258
+historical,historical_1990_2019,1990,2019,rice,Rice,nonIrr,Rainfed,dry,Drought stress,loss_million_tonnes,1,0.35161649206904205,,,,0.352
+historical,historical_1990_2019,1990,2019,rice,Rice,nonIrr,Rainfed,total,Total water stress,loss_pct,1,2.0183763267180024,,,,2.018
+historical,historical_1990_2019,1990,2019,rice,Rice,nonIrr,Rainfed,total,Total water stress,loss_million_tonnes,1,2.800169690298423,,,,2.800
+historical,historical_1990_2019,1990,2019,rice,Rice,nonIrr,Rainfed,wet,Waterlogging stress,loss_pct,1,1.6236226896493664,,,,1.624
+historical,historical_1990_2019,1990,2019,rice,Rice,nonIrr,Rainfed,wet,Waterlogging stress,loss_million_tonnes,1,2.2571836242521646,,,,2.257
+historical,historical_1990_2019,1990,2019,rice,Rice,total,Total,dry,Drought stress,loss_pct,1,0.15120046959182645,,,,0.151
+historical,historical_1990_2019,1990,2019,rice,Rice,total,Total,dry,Drought stress,loss_million_tonnes,1,0.35161649206904205,,,,0.352
+historical,historical_1990_2019,1990,2019,rice,Rice,total,Total,total,Total water stress,loss_pct,1,2.1780351695373326,,,,2.178
+historical,historical_1990_2019,1990,2019,rice,Rice,total,Total,total,Total water stress,loss_million_tonnes,1,5.13355210279725,,,,5.134
+historical,historical_1990_2019,1990,2019,rice,Rice,total,Total,wet,Waterlogging stress,loss_pct,1,0.9538674845224571,,,,0.954
+historical,historical_1990_2019,1990,2019,rice,Rice,total,Total,wet,Waterlogging stress,loss_million_tonnes,1,2.2571836242521646,,,,2.257
+historical,historical_1990_2019,1990,2019,soyb,Soybean,Irr,Irrigated,dry,Drought stress,loss_pct,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,soyb,Soybean,Irr,Irrigated,dry,Drought stress,loss_million_tonnes,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,soyb,Soybean,Irr,Irrigated,total,Total water stress,loss_pct,1,2.5980695947757484,,,,2.598
+historical,historical_1990_2019,1990,2019,soyb,Soybean,Irr,Irrigated,total,Total water stress,loss_million_tonnes,1,0.2517543921729283,,,,0.252
+historical,historical_1990_2019,1990,2019,soyb,Soybean,Irr,Irrigated,wet,Waterlogging stress,loss_pct,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,soyb,Soybean,Irr,Irrigated,wet,Waterlogging stress,loss_million_tonnes,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,soyb,Soybean,nonIrr,Rainfed,dry,Drought stress,loss_pct,1,0.9329525142369165,,,,0.933
+historical,historical_1990_2019,1990,2019,soyb,Soybean,nonIrr,Rainfed,dry,Drought stress,loss_million_tonnes,1,1.1749637906907464,,,,1.175
+historical,historical_1990_2019,1990,2019,soyb,Soybean,nonIrr,Rainfed,total,Total water stress,loss_pct,1,1.4180891032318281,,,,1.418
+historical,historical_1990_2019,1990,2019,soyb,Soybean,nonIrr,Rainfed,total,Total water stress,loss_million_tonnes,1,1.790168077586089,,,,1.790
+historical,historical_1990_2019,1990,2019,soyb,Soybean,nonIrr,Rainfed,wet,Waterlogging stress,loss_pct,1,0.40780980068509837,,,,0.408
+historical,historical_1990_2019,1990,2019,soyb,Soybean,nonIrr,Rainfed,wet,Waterlogging stress,loss_million_tonnes,1,0.5162572260500153,,,,0.516
+historical,historical_1990_2019,1990,2019,soyb,Soybean,total,Total,dry,Drought stress,loss_pct,1,0.8650706515295141,,,,0.865
+historical,historical_1990_2019,1990,2019,soyb,Soybean,total,Total,dry,Drought stress,loss_million_tonnes,1,1.1749637906907464,,,,1.175
+historical,historical_1990_2019,1990,2019,soyb,Soybean,total,Total,total,Total water stress,loss_pct,1,1.5014170912488412,,,,1.501
+historical,historical_1990_2019,1990,2019,soyb,Soybean,total,Total,total,Total water stress,loss_million_tonnes,1,2.0419224697590175,,,,2.042
+historical,historical_1990_2019,1990,2019,soyb,Soybean,total,Total,wet,Waterlogging stress,loss_pct,1,0.37873630909347095,,,,0.379
+historical,historical_1990_2019,1990,2019,soyb,Soybean,total,Total,wet,Waterlogging stress,loss_million_tonnes,1,0.5162572260500153,,,,0.516
+historical,historical_1990_2019,1990,2019,whea,Wheat,Irr,Irrigated,dry,Drought stress,loss_pct,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,whea,Wheat,Irr,Irrigated,dry,Drought stress,loss_million_tonnes,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,whea,Wheat,Irr,Irrigated,total,Total water stress,loss_pct,1,1.010402166226615,,,,1.010
+historical,historical_1990_2019,1990,2019,whea,Wheat,Irr,Irrigated,total,Total water stress,loss_million_tonnes,1,1.2010749629883604,,,,1.201
+historical,historical_1990_2019,1990,2019,whea,Wheat,Irr,Irrigated,wet,Waterlogging stress,loss_pct,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,whea,Wheat,Irr,Irrigated,wet,Waterlogging stress,loss_million_tonnes,1,0.0,,,,0.000
+historical,historical_1990_2019,1990,2019,whea,Wheat,nonIrr,Rainfed,dry,Drought stress,loss_pct,1,1.3278088043411347,,,,1.328
+historical,historical_1990_2019,1990,2019,whea,Wheat,nonIrr,Rainfed,dry,Drought stress,loss_million_tonnes,1,11.470068389135015,,,,11.470
+historical,historical_1990_2019,1990,2019,whea,Wheat,nonIrr,Rainfed,total,Total water stress,loss_pct,1,1.4424468818727274,,,,1.442
+historical,historical_1990_2019,1990,2019,whea,Wheat,nonIrr,Rainfed,total,Total water stress,loss_million_tonnes,1,12.461874400704403,,,,12.462
+historical,historical_1990_2019,1990,2019,whea,Wheat,nonIrr,Rainfed,wet,Waterlogging stress,loss_pct,1,0.19385305897190894,,,,0.194
+historical,historical_1990_2019,1990,2019,whea,Wheat,nonIrr,Rainfed,wet,Waterlogging stress,loss_million_tonnes,1,1.6756812669659458,,,,1.676
+historical,historical_1990_2019,1990,2019,whea,Wheat,total,Total,dry,Drought stress,loss_pct,1,1.1672579607888192,,,,1.167
+historical,historical_1990_2019,1990,2019,whea,Wheat,total,Total,dry,Drought stress,loss_million_tonnes,1,11.470068389135015,,,,11.470
+historical,historical_1990_2019,1990,2019,whea,Wheat,total,Total,total,Total water stress,loss_pct,1,1.3902759057955303,,,,1.390
+historical,historical_1990_2019,1990,2019,whea,Wheat,total,Total,total,Total water stress,loss_million_tonnes,1,13.662949363692762,,,,13.663
+historical,historical_1990_2019,1990,2019,whea,Wheat,total,Total,wet,Waterlogging stress,loss_pct,1,0.17043694557190026,,,,0.170
+historical,historical_1990_2019,1990,2019,whea,Wheat,total,Total,wet,Waterlogging stress,loss_million_tonnes,1,1.6756812669659458,,,,1.676
+ssp126,future_2070_2100,2070,2100,all4,All four crops,Irr,Irrigated,dry,Drought stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,Irr,Irrigated,dry,Drought stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,Irr,Irrigated,total,Total water stress,loss_pct,10,6.112765066427341,0.34159428987206153,5.901042732053455,6.324487400801228,6.113 ± 0.342 (5.901-6.324)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,Irr,Irrigated,total,Total water stress,loss_million_tonnes,10,14.38055092835333,0.7936803014306509,13.88862278099348,14.87247907571318,14.381 ± 0.794 (13.889-14.872)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,Irr,Irrigated,wet,Waterlogging stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,Irr,Irrigated,wet,Waterlogging stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,nonIrr,Rainfed,dry,Drought stress,loss_pct,10,2.951040196346465,0.4426136931283669,2.6767053871490316,3.2253750055438988,2.951 ± 0.443 (2.677-3.225)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,nonIrr,Rainfed,dry,Drought stress,loss_million_tonnes,10,30.830769421706417,4.613655544017849,27.97119608942873,33.690342753984105,30.831 ± 4.614 (27.971-33.690)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,nonIrr,Rainfed,total,Total water stress,loss_pct,10,4.5628931277794065,0.38776800327171584,4.322552029340854,4.803234226217959,4.563 ± 0.388 (4.323-4.803)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,nonIrr,Rainfed,total,Total water stress,loss_million_tonnes,10,47.73985025431905,4.031854802068024,45.24088075787308,50.238819750765025,47.740 ± 4.032 (45.241-50.239)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,nonIrr,Rainfed,wet,Waterlogging stress,loss_pct,10,2.2555591075924513,0.07562373662648669,2.2086870300216215,2.302431185163281,2.256 ± 0.076 (2.209-2.302)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,nonIrr,Rainfed,wet,Waterlogging stress,loss_million_tonnes,10,23.664742906716555,0.8230120882693756,23.15463472952313,24.174851083909978,23.665 ± 0.823 (23.155-24.175)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,total,Total,dry,Drought stress,loss_pct,10,2.408600463710151,0.361315981713514,2.1846544980921987,2.6325464293281033,2.409 ± 0.361 (2.185-2.633)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,total,Total,dry,Drought stress,loss_million_tonnes,10,30.830769421706417,4.613655544017849,27.97119608942873,33.690342753984105,30.831 ± 4.614 (27.971-33.690)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,total,Total,total,Total water stress,loss_pct,10,4.847560552119462,0.3712210038827607,4.6174753901569705,5.077645714081953,4.848 ± 0.371 (4.617-5.078)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,total,Total,total,Total water stress,loss_million_tonnes,10,62.12040118267239,4.7242291961096505,59.19229359079132,65.04850877455345,62.120 ± 4.724 (59.192-65.049)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,total,Total,wet,Waterlogging stress,loss_pct,10,1.840797023944767,0.061675146830441896,1.802570371898903,1.8790236759906311,1.841 ± 0.062 (1.803-1.879)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,total,Total,wet,Waterlogging stress,loss_million_tonnes,10,23.664742906716555,0.8230120882693756,23.15463472952313,24.174851083909978,23.665 ± 0.823 (23.155-24.175)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,Irr,Irrigated,dry,Drought stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,Irr,Irrigated,dry,Drought stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,Irr,Irrigated,total,Total water stress,loss_pct,10,7.811673011890233,0.5231239126529122,7.487437451643726,8.13590857213674,7.812 ± 0.523 (7.487-8.136)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,Irr,Irrigated,total,Total water stress,loss_million_tonnes,10,9.670865491289517,0.648409275687748,9.268977258527466,10.072753724051568,9.671 ± 0.648 (9.269-10.073)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,Irr,Irrigated,wet,Waterlogging stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,Irr,Irrigated,wet,Waterlogging stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,nonIrr,Rainfed,dry,Drought stress,loss_pct,10,2.589698725413901,0.43762447943263527,2.3184562629027834,2.860941187925018,2.590 ± 0.438 (2.318-2.861)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,nonIrr,Rainfed,dry,Drought stress,loss_million_tonnes,10,10.509209980459136,1.775396821431477,9.40880763001518,11.609612330903092,10.509 ± 1.775 (9.409-11.610)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,nonIrr,Rainfed,total,Total water stress,loss_pct,10,4.131904933617608,0.36098219073959,3.908165853788696,4.355644013446519,4.132 ± 0.361 (3.908-4.356)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,nonIrr,Rainfed,total,Total water stress,loss_million_tonnes,10,16.766355767005958,1.4692267664981848,15.855719582647906,17.67699195136401,16.766 ± 1.469 (15.856-17.677)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,nonIrr,Rainfed,wet,Waterlogging stress,loss_pct,10,2.0359803796993408,0.11952148198609011,1.9619001976699542,2.1100605617287274,2.036 ± 0.120 (1.962-2.110)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,nonIrr,Rainfed,wet,Waterlogging stress,loss_million_tonnes,10,8.259501071362228,0.49733141346503235,7.9512518677361435,8.567750274988313,8.260 ± 0.497 (7.951-8.568)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,total,Total,dry,Drought stress,loss_pct,10,1.9843237809707772,0.3350607787217955,1.7766509587620685,2.191996603179486,1.984 ± 0.335 (1.777-2.192)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,total,Total,dry,Drought stress,loss_million_tonnes,10,10.509209980459136,1.775396821431477,9.40880763001518,11.609612330903092,10.509 ± 1.775 (9.409-11.610)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,total,Total,total,Total water stress,loss_pct,10,4.991881914680198,0.39054063937378186,4.749822318581399,5.233941510778997,4.992 ± 0.391 (4.750-5.234)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,total,Total,total,Total water stress,loss_million_tonnes,10,26.437221258295473,2.0688055832206445,25.154962273201622,27.719480243389324,26.437 ± 2.069 (25.155-27.719)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,total,Total,wet,Waterlogging stress,loss_pct,10,1.560571201941341,0.09206735065428699,1.5035072668051725,1.6176351370775093,1.561 ± 0.092 (1.504-1.618)
+ssp126,future_2070_2100,2070,2100,maiz,Maize,total,Total,wet,Waterlogging stress,loss_million_tonnes,10,8.259501071362228,0.49733141346503235,7.9512518677361435,8.567750274988313,8.260 ± 0.497 (7.951-8.568)
+ssp126,future_2070_2100,2070,2100,rice,Rice,Irr,Irrigated,dry,Drought stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,rice,Rice,Irr,Irrigated,dry,Drought stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,rice,Rice,Irr,Irrigated,total,Total water stress,loss_pct,10,3.745136875402428,0.14087665537293798,3.6578206197779117,3.832453131026944,3.745 ± 0.141 (3.658-3.832)
+ssp126,future_2070_2100,2070,2100,rice,Rice,Irr,Irrigated,total,Total water stress,loss_million_tonnes,10,3.1860325476865077,0.11484834150870359,3.1148488081330767,3.2572162872399386,3.186 ± 0.115 (3.115-3.257)
+ssp126,future_2070_2100,2070,2100,rice,Rice,Irr,Irrigated,wet,Waterlogging stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,rice,Rice,Irr,Irrigated,wet,Waterlogging stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,rice,Rice,nonIrr,Rainfed,dry,Drought stress,loss_pct,10,2.6995461208761435,0.22747728046117643,2.5585542417252896,2.8405380000269975,2.700 ± 0.227 (2.559-2.841)
+ssp126,future_2070_2100,2070,2100,rice,Rice,nonIrr,Rainfed,dry,Drought stress,loss_million_tonnes,10,3.3973965854759682,0.2842643519653203,3.221207714754742,3.5735854561971943,3.397 ± 0.284 (3.221-3.574)
+ssp126,future_2070_2100,2070,2100,rice,Rice,nonIrr,Rainfed,total,Total water stress,loss_pct,10,10.044469102686753,0.413535731666094,9.788157000724654,10.300781204648851,10.044 ± 0.414 (9.788-10.301)
+ssp126,future_2070_2100,2070,2100,rice,Rice,nonIrr,Rainfed,total,Total water stress,loss_million_tonnes,10,12.562466105955226,0.586533152219374,12.198929091849779,12.926003120060672,12.562 ± 0.587 (12.199-12.926)
+ssp126,future_2070_2100,2070,2100,rice,Rice,nonIrr,Rainfed,wet,Waterlogging stress,loss_pct,10,9.777793013647372,0.4107661057000361,9.523197543643892,10.032388483650852,9.778 ± 0.411 (9.523-10.032)
+ssp126,future_2070_2100,2070,2100,rice,Rice,nonIrr,Rainfed,wet,Waterlogging stress,loss_million_tonnes,10,12.236921476637855,0.5845768863524956,11.87459696867865,12.59924598459706,12.237 ± 0.585 (11.875-12.599)
+ssp126,future_2070_2100,2070,2100,rice,Rice,total,Total,dry,Drought stress,loss_pct,10,1.5968560468528545,0.13428575419960118,1.5136248740983393,1.6800872196073697,1.597 ± 0.134 (1.514-1.680)
+ssp126,future_2070_2100,2070,2100,rice,Rice,total,Total,dry,Drought stress,loss_million_tonnes,10,3.3973965854759682,0.2842643519653203,3.221207714754742,3.5735854561971943,3.397 ± 0.284 (3.221-3.574)
+ssp126,future_2070_2100,2070,2100,rice,Rice,total,Total,total,Total water stress,loss_pct,10,7.475729746479866,0.26538117612242,7.311244789402362,7.640214703557369,7.476 ± 0.265 (7.311-7.640)
+ssp126,future_2070_2100,2070,2100,rice,Rice,total,Total,total,Total water stress,loss_million_tonnes,10,15.748498653641732,0.6061389588551672,15.372809834686832,16.124187472596635,15.748 ± 0.606 (15.373-16.124)
+ssp126,future_2070_2100,2070,2100,rice,Rice,total,Total,wet,Waterlogging stress,loss_pct,10,5.779968727502831,0.25364099456734085,5.622760410341485,5.9371770446641765,5.780 ± 0.254 (5.623-5.937)
+ssp126,future_2070_2100,2070,2100,rice,Rice,total,Total,wet,Waterlogging stress,loss_million_tonnes,10,12.236921476637855,0.5845768863524956,11.87459696867865,12.59924598459706,12.237 ± 0.585 (11.875-12.599)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,Irr,Irrigated,dry,Drought stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,Irr,Irrigated,dry,Drought stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,Irr,Irrigated,total,Total water stress,loss_pct,10,7.472571864568065,0.5695433884853478,7.119565215122917,7.8255785140132135,7.473 ± 0.570 (7.120-7.826)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,Irr,Irrigated,total,Total water stress,loss_million_tonnes,10,0.7798969969621471,0.060601941446799576,0.742335524504538,0.8174584694197562,0.780 ± 0.061 (0.742-0.817)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,Irr,Irrigated,wet,Waterlogging stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,Irr,Irrigated,wet,Waterlogging stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,nonIrr,Rainfed,dry,Drought stress,loss_pct,10,1.8458872673812081,0.46108843554681644,1.5601016941992378,2.1316728405631786,1.846 ± 0.461 (1.560-2.132)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,nonIrr,Rainfed,dry,Drought stress,loss_million_tonnes,10,2.4810150412740244,0.6169268294064045,2.0986398308783096,2.863390251669739,2.481 ± 0.617 (2.099-2.863)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,nonIrr,Rainfed,total,Total water stress,loss_pct,10,2.731248365277424,0.41270953945055017,2.4754483425558247,2.9870483879990237,2.731 ± 0.413 (2.475-2.987)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,nonIrr,Rainfed,total,Total water stress,loss_million_tonnes,10,3.6808010651885885,0.5506329335951643,3.339515237115839,4.022086893261338,3.681 ± 0.551 (3.340-4.022)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,nonIrr,Rainfed,wet,Waterlogging stress,loss_pct,10,1.1950270943941717,0.07395829553211705,1.1491872679080841,1.2408669208802592,1.195 ± 0.074 (1.149-1.241)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,nonIrr,Rainfed,wet,Waterlogging stress,loss_million_tonnes,10,1.616769998887507,0.10480192509153746,1.5518130927414238,1.6817269050335903,1.617 ± 0.105 (1.552-1.682)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,total,Total,dry,Drought stress,loss_pct,10,1.7125750002154567,0.4274856540681022,1.4476166467706593,1.9775333536602542,1.713 ± 0.427 (1.448-1.978)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,total,Total,dry,Drought stress,loss_million_tonnes,10,2.4810150412740244,0.6169268294064045,2.0986398308783096,2.863390251669739,2.481 ± 0.617 (2.099-2.863)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,total,Total,total,Total water stress,loss_pct,10,3.0724597712805144,0.4204678791970793,2.8118510797646676,3.333068462796361,3.072 ± 0.420 (2.812-3.333)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,total,Total,total,Total water stress,loss_million_tonnes,10,4.460698062150736,0.6039293166247626,4.086378793639221,4.835017330662251,4.461 ± 0.604 (4.086-4.835)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,total,Total,wet,Waterlogging stress,loss_pct,10,1.1093861983755644,0.06866701582470691,1.0668259410295162,1.1519464557216126,1.109 ± 0.069 (1.067-1.152)
+ssp126,future_2070_2100,2070,2100,soyb,Soybean,total,Total,wet,Waterlogging stress,loss_million_tonnes,10,1.616769998887507,0.10480192509153746,1.5518130927414238,1.6817269050335903,1.617 ± 0.105 (1.552-1.682)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,Irr,Irrigated,dry,Drought stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,Irr,Irrigated,dry,Drought stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,Irr,Irrigated,total,Total water stress,loss_pct,10,4.622968122481166,0.3449037047913249,4.409194591489266,4.836741653473066,4.623 ± 0.345 (4.409-4.837)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,Irr,Irrigated,total,Total water stress,loss_million_tonnes,10,0.7437558924151582,0.05344923641764793,0.7106277124649473,0.776884072365369,0.744 ± 0.053 (0.711-0.777)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,Irr,Irrigated,wet,Waterlogging stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,Irr,Irrigated,wet,Waterlogging stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,nonIrr,Rainfed,dry,Drought stress,loss_pct,10,3.8043012064127026,0.619872278741296,3.420100387605334,4.188502025220071,3.804 ± 0.620 (3.420-4.189)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,nonIrr,Rainfed,dry,Drought stress,loss_million_tonnes,10,14.443147814497289,2.347690912025628,12.98803391177781,15.898261717216768,14.443 ± 2.348 (12.988-15.898)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,nonIrr,Rainfed,total,Total water stress,loss_pct,10,3.8798338987902206,0.5971813836277078,3.5096970424814096,4.2499707550990315,3.880 ± 0.597 (3.510-4.250)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,nonIrr,Rainfed,total,Total water stress,loss_million_tonnes,10,14.73022731616928,2.261360973850818,13.32862126348901,16.13183336884955,14.730 ± 2.261 (13.329-16.132)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,nonIrr,Rainfed,wet,Waterlogging stress,loss_pct,10,0.40828729325463736,0.03244717345275173,0.3881763267925693,0.4283982597167054,0.408 ± 0.032 (0.388-0.428)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,nonIrr,Rainfed,wet,Waterlogging stress,loss_million_tonnes,10,1.5515503598289642,0.1269187055996781,1.4728853311033956,1.6302153885545327,1.552 ± 0.127 (1.473-1.630)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,total,Total,dry,Drought stress,loss_pct,10,3.649804773598015,0.5950322961646088,3.2809999354989676,4.018609611697062,3.650 ± 0.595 (3.281-4.019)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,total,Total,dry,Drought stress,loss_million_tonnes,10,14.443147814497289,2.347690912025628,12.98803391177781,15.898261717216768,14.443 ± 2.348 (12.988-15.898)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,total,Total,total,Total water stress,loss_pct,10,3.9098682520766594,0.585216366684454,3.547147390101353,4.272589114051966,3.910 ± 0.585 (3.547-4.273)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,total,Total,total,Total water stress,loss_million_tonnes,10,15.473983208584439,2.3084017998053215,14.043220949909937,16.90474546725894,15.474 ± 2.308 (14.043-16.905)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,total,Total,wet,Waterlogging stress,loss_pct,10,0.3917203613864533,0.031208998934517937,0.3723768234415917,0.4110638993313149,0.392 ± 0.031 (0.372-0.411)
+ssp126,future_2070_2100,2070,2100,whea,Wheat,total,Total,wet,Waterlogging stress,loss_million_tonnes,10,1.5515503598289642,0.1269187055996781,1.4728853311033956,1.6302153885545327,1.552 ± 0.127 (1.473-1.630)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,Irr,Irrigated,dry,Drought stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,Irr,Irrigated,dry,Drought stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,Irr,Irrigated,total,Total water stress,loss_pct,10,6.734984881890897,0.21365627651261407,6.60255934973746,6.867410414044334,6.735 ± 0.214 (6.603-6.867)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,Irr,Irrigated,total,Total water stress,loss_million_tonnes,10,16.228886386795427,0.5673122359541594,15.877262620016216,16.580510153574636,16.229 ± 0.567 (15.877-16.581)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,Irr,Irrigated,wet,Waterlogging stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,Irr,Irrigated,wet,Waterlogging stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,nonIrr,Rainfed,dry,Drought stress,loss_pct,10,3.666494183798348,0.5635468740111823,3.317204212530264,4.015784155066432,3.666 ± 0.564 (3.317-4.016)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,nonIrr,Rainfed,dry,Drought stress,loss_million_tonnes,10,39.26904509066778,5.972502704326884,35.56724956273891,42.970840618596654,39.269 ± 5.973 (35.567-42.971)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,nonIrr,Rainfed,total,Total water stress,loss_pct,10,5.238520976444553,0.5429462009273079,4.901999434638872,5.575042518250234,5.239 ± 0.543 (4.902-5.575)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,nonIrr,Rainfed,total,Total water stress,loss_million_tonnes,10,56.19701770596153,5.792696794592922,52.606667035490176,59.78736837643288,56.197 ± 5.793 (52.607-59.787)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,nonIrr,Rainfed,wet,Waterlogging stress,loss_pct,10,2.086749110350454,0.19240101588979908,1.9674977252194192,2.2060004954814882,2.087 ± 0.192 (1.967-2.206)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,nonIrr,Rainfed,wet,Waterlogging stress,loss_million_tonnes,10,22.465031576984096,2.1376323750332062,21.14011330436094,23.78994984960725,22.465 ± 2.138 (21.140-23.790)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,total,Total,dry,Drought stress,loss_pct,10,2.992808357957857,0.4566229666935739,2.709790511045657,3.275826204870057,2.993 ± 0.457 (2.710-3.276)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,total,Total,dry,Drought stress,loss_million_tonnes,10,39.26904509066778,5.972502704326884,35.56724956273891,42.970840618596654,39.269 ± 5.973 (35.567-42.971)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,total,Total,total,Total water stress,loss_pct,10,5.512884373372365,0.46899139403459394,5.222200495771667,5.803568250973062,5.513 ± 0.469 (5.222-5.804)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,total,Total,total,Total water stress,loss_million_tonnes,10,72.42590409275695,6.190844935385852,68.58877864795646,76.26302953755744,72.426 ± 6.191 (68.589-76.263)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,total,Total,wet,Waterlogging stress,loss_pct,10,1.7034963120230509,0.15801507062073836,1.6055575565754485,1.8014350674706532,1.703 ± 0.158 (1.606-1.801)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,total,Total,wet,Waterlogging stress,loss_million_tonnes,10,22.465031576984096,2.1376323750332062,21.14011330436094,23.78994984960725,22.465 ± 2.138 (21.140-23.790)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,Irr,Irrigated,dry,Drought stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,Irr,Irrigated,dry,Drought stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,Irr,Irrigated,total,Total water stress,loss_pct,10,8.905938497227295,0.3704285799076854,8.67634448473302,9.13553250972157,8.906 ± 0.370 (8.676-9.136)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,Irr,Irrigated,total,Total water stress,loss_million_tonnes,10,11.218472065086829,0.4872865331872431,10.91644874275904,11.520495387414616,11.218 ± 0.487 (10.916-11.520)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,Irr,Irrigated,wet,Waterlogging stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,Irr,Irrigated,wet,Waterlogging stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,nonIrr,Rainfed,dry,Drought stress,loss_pct,10,3.4934609179519533,0.4152835275422503,3.236065520882529,3.7508563150213776,3.493 ± 0.415 (3.236-3.751)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,nonIrr,Rainfed,dry,Drought stress,loss_million_tonnes,10,14.919509806577532,1.7553975086527158,13.8315031586173,16.007516454537765,14.920 ± 1.755 (13.832-16.008)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,nonIrr,Rainfed,total,Total water stress,loss_pct,10,4.799271849161618,0.41406200694513634,4.542633558402149,5.055910139921088,4.799 ± 0.414 (4.543-5.056)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,nonIrr,Rainfed,total,Total water stress,loss_million_tonnes,10,20.494062168386936,1.7518623731069194,19.408246620138485,21.579877716635387,20.494 ± 1.752 (19.408-21.580)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,nonIrr,Rainfed,wet,Waterlogging stress,loss_pct,10,1.7008054772265244,0.15916071235743595,1.6021566456739011,1.7994543087791477,1.701 ± 0.159 (1.602-1.799)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,nonIrr,Rainfed,wet,Waterlogging stress,loss_million_tonnes,10,7.259864256181459,0.6920971272875792,6.830898012460967,7.68883049990195,7.260 ± 0.692 (6.831-7.689)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,total,Total,dry,Drought stress,loss_pct,10,2.6973034083977994,0.3180739242749957,2.5001591476544855,2.894447669141113,2.697 ± 0.318 (2.500-2.894)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,total,Total,dry,Drought stress,loss_million_tonnes,10,14.919509806577532,1.7553975086527158,13.8315031586173,16.007516454537765,14.920 ± 1.755 (13.832-16.008)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,total,Total,total,Total water stress,loss_pct,10,5.73453540131776,0.3826755356764545,5.4973506469954865,5.971720155640033,5.735 ± 0.383 (5.497-5.972)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,total,Total,total,Total water stress,loss_million_tonnes,10,31.712534233473765,2.118099754608619,30.3997224044164,33.02534606253113,31.713 ± 2.118 (30.400-33.025)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,total,Total,wet,Waterlogging stress,loss_pct,10,1.3139066244555675,0.12403200652412698,1.2370307903536548,1.3907824585574802,1.314 ± 0.124 (1.237-1.391)
+ssp585,future_2070_2100,2070,2100,maiz,Maize,total,Total,wet,Waterlogging stress,loss_million_tonnes,10,7.259864256181459,0.6920971272875792,6.830898012460967,7.68883049990195,7.260 ± 0.692 (6.831-7.689)
+ssp585,future_2070_2100,2070,2100,rice,Rice,Irr,Irrigated,dry,Drought stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,rice,Rice,Irr,Irrigated,dry,Drought stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,rice,Rice,Irr,Irrigated,total,Total water stress,loss_pct,10,3.8052054861873414,0.11067898795751363,3.7366059387379957,3.873805033636687,3.805 ± 0.111 (3.737-3.874)
+ssp585,future_2070_2100,2070,2100,rice,Rice,Irr,Irrigated,total,Total water stress,loss_million_tonnes,10,3.259799345833032,0.0971178103412121,3.1996051033519213,3.319993588314143,3.260 ± 0.097 (3.200-3.320)
+ssp585,future_2070_2100,2070,2100,rice,Rice,Irr,Irrigated,wet,Waterlogging stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,rice,Rice,Irr,Irrigated,wet,Waterlogging stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,rice,Rice,nonIrr,Rainfed,dry,Drought stress,loss_pct,10,2.3614948254624886,0.2518491748498455,2.2053970896680255,2.5175925612569516,2.361 ± 0.252 (2.205-2.518)
+ssp585,future_2070_2100,2070,2100,rice,Rice,nonIrr,Rainfed,dry,Drought stress,loss_million_tonnes,10,2.9594254604126005,0.29662912380791023,2.7755728247042777,3.1432780961209232,2.959 ± 0.297 (2.776-3.143)
+ssp585,future_2070_2100,2070,2100,rice,Rice,nonIrr,Rainfed,total,Total water stress,loss_pct,10,10.239127944492903,0.9701311377081501,9.637834435748093,10.840421453237713,10.239 ± 0.970 (9.638-10.840)
+ssp585,future_2070_2100,2070,2100,rice,Rice,nonIrr,Rainfed,total,Total water stress,loss_million_tonnes,10,12.868751840916644,1.3858250906425298,12.009808550808865,13.727695131024424,12.869 ± 1.386 (12.010-13.728)
+ssp585,future_2070_2100,2070,2100,rice,Rice,nonIrr,Rainfed,wet,Waterlogging stress,loss_pct,10,9.817663350980371,1.0065487195784968,9.193797991140714,10.441528710820029,9.818 ± 1.007 (9.194-10.442)
+ssp585,future_2070_2100,2070,2100,rice,Rice,nonIrr,Rainfed,wet,Waterlogging stress,loss_million_tonnes,10,12.356670664171213,1.4240550094684101,11.47403222488582,13.239309103456607,12.357 ± 1.424 (11.474-13.239)
+ssp585,future_2070_2100,2070,2100,rice,Rice,total,Total,dry,Drought stress,loss_pct,10,1.3915436754584785,0.14301135139451898,1.3029043215320646,1.4801830293848923,1.392 ± 0.143 (1.303-1.480)
+ssp585,future_2070_2100,2070,2100,rice,Rice,total,Total,dry,Drought stress,loss_million_tonnes,10,2.9594254604126005,0.29662912380791023,2.7755728247042777,3.1432780961209232,2.959 ± 0.297 (2.776-3.143)
+ssp585,future_2070_2100,2070,2100,rice,Rice,total,Total,total,Total water stress,loss_pct,10,7.614093672677167,0.5588826336124603,7.267694627559131,7.960492717795202,7.614 ± 0.559 (7.268-7.960)
+ssp585,future_2070_2100,2070,2100,rice,Rice,total,Total,total,Total water stress,loss_million_tonnes,10,16.12855118674968,1.3236555310193836,15.3081409889115,16.948961384587857,16.129 ± 1.324 (15.308-16.949)
+ssp585,future_2070_2100,2070,2100,rice,Rice,total,Total,wet,Waterlogging stress,loss_pct,10,5.798734753921011,0.6222469744715526,5.413062083451175,6.184407424390846,5.799 ± 0.622 (5.413-6.184)
+ssp585,future_2070_2100,2070,2100,rice,Rice,total,Total,wet,Waterlogging stress,loss_million_tonnes,10,12.356670664171213,1.4240550094684101,11.47403222488582,13.239309103456607,12.357 ± 1.424 (11.474-13.239)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,Irr,Irrigated,dry,Drought stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,Irr,Irrigated,dry,Drought stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,Irr,Irrigated,total,Total water stress,loss_pct,10,8.602817089056305,0.49922747826220376,8.293392692293557,8.912241485819054,8.603 ± 0.499 (8.293-8.912)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,Irr,Irrigated,total,Total water stress,loss_million_tonnes,10,0.9127388001430393,0.059207353484965475,0.8760417022593724,0.9494358980267062,0.913 ± 0.059 (0.876-0.949)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,Irr,Irrigated,wet,Waterlogging stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,Irr,Irrigated,wet,Waterlogging stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,nonIrr,Rainfed,dry,Drought stress,loss_pct,10,2.2913779270873755,0.46351815763621895,2.004086396552193,2.578669457622558,2.291 ± 0.464 (2.004-2.579)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,nonIrr,Rainfed,dry,Drought stress,loss_million_tonnes,10,3.153001104348974,0.6271428818510684,2.764293919046769,3.5417082896511793,3.153 ± 0.627 (2.764-3.542)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,nonIrr,Rainfed,total,Total water stress,loss_pct,10,3.0904914325397614,0.469776044609699,2.7993212234740645,3.3816616416054583,3.090 ± 0.470 (2.799-3.382)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,nonIrr,Rainfed,total,Total water stress,loss_million_tonnes,10,4.258385421256504,0.6333951782773207,3.865803022480855,4.650967820032153,4.258 ± 0.633 (3.866-4.651)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,nonIrr,Rainfed,wet,Waterlogging stress,loss_pct,10,1.0813069583035961,0.07901166013737905,1.0323350239855271,1.1302788926216651,1.081 ± 0.079 (1.032-1.130)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,nonIrr,Rainfed,wet,Waterlogging stress,loss_million_tonnes,10,1.494224887337319,0.11276644910482897,1.4243315180644587,1.5641182566101792,1.494 ± 0.113 (1.424-1.564)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,total,Total,dry,Drought stress,loss_pct,10,2.126932473002288,0.4289362233259597,1.8610750474167954,2.3927898985877807,2.127 ± 0.429 (1.861-2.393)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,total,Total,dry,Drought stress,loss_million_tonnes,10,3.153001104348974,0.6271428818510684,2.764293919046769,3.5417082896511793,3.153 ± 0.627 (2.764-3.542)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,total,Total,total,Total water stress,loss_pct,10,3.486309601809782,0.46957679750945047,3.1952628873762627,3.777356316243301,3.486 ± 0.470 (3.195-3.777)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,total,Total,total,Total water stress,loss_million_tonnes,10,5.171124221399545,0.6840246284914695,4.747161364269569,5.59508707852952,5.171 ± 0.684 (4.747-5.595)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,total,Total,wet,Waterlogging stress,loss_pct,10,1.0042112794722056,0.07381334972846665,0.9584612913259745,1.0499612676184367,1.004 ± 0.074 (0.958-1.050)
+ssp585,future_2070_2100,2070,2100,soyb,Soybean,total,Total,wet,Waterlogging stress,loss_million_tonnes,10,1.494224887337319,0.11276644910482897,1.4243315180644587,1.5641182566101792,1.494 ± 0.113 (1.424-1.564)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,Irr,Irrigated,dry,Drought stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,Irr,Irrigated,dry,Drought stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,Irr,Irrigated,total,Total water stress,loss_pct,10,4.446322676703491,0.295818323995795,4.262972579925181,4.629672773481801,4.446 ± 0.296 (4.263-4.630)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,Irr,Irrigated,total,Total water stress,loss_million_tonnes,10,0.8378761757325256,0.05848473260200535,0.80162696291235,0.8741253885527012,0.838 ± 0.058 (0.802-0.874)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,Irr,Irrigated,wet,Waterlogging stress,loss_pct,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,Irr,Irrigated,wet,Waterlogging stress,loss_million_tonnes,10,0.0,0.0,0.0,0.0,0.000 ± 0.000 (0.000-0.000)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,nonIrr,Rainfed,dry,Drought stress,loss_pct,10,4.775117051583646,1.0344450238275416,4.133961383237298,5.416272719929993,4.775 ± 1.034 (4.134-5.416)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,nonIrr,Rainfed,dry,Drought stress,loss_million_tonnes,10,18.237108719328678,3.9305469265188613,15.800930494685758,20.673286943971597,18.237 ± 3.931 (15.801-20.673)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,nonIrr,Rainfed,total,Total water stress,loss_pct,10,4.863651496743006,1.0103827866119197,4.237409757535982,5.48989323595003,4.864 ± 1.010 (4.237-5.490)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,nonIrr,Rainfed,total,Total water stress,loss_million_tonnes,10,18.575818275401446,3.838353222463338,16.196782300544147,20.954854250258744,18.576 ± 3.838 (16.197-20.955)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,nonIrr,Rainfed,wet,Waterlogging stress,loss_pct,10,0.35403946386619334,0.05177840615919342,0.32194687523923027,0.3861320524931564,0.354 ± 0.052 (0.322-0.386)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,nonIrr,Rainfed,wet,Waterlogging stress,loss_million_tonnes,10,1.3542717692941075,0.20070585209941,1.229872993351739,1.4786705452364761,1.354 ± 0.201 (1.230-1.479)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,total,Total,dry,Drought stress,loss_pct,10,4.550931936225508,0.9846961381147051,3.940610946701123,5.161252925749893,4.551 ± 0.985 (3.941-5.161)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,total,Total,dry,Drought stress,loss_million_tonnes,10,18.237108719328678,3.9305469265188613,15.800930494685758,20.673286943971597,18.237 ± 3.931 (15.801-20.673)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,total,Total,total,Total water stress,loss_pct,10,4.843951632687832,0.9747846685269393,4.239773835659385,5.448129429716278,4.844 ± 0.975 (4.240-5.448)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,total,Total,total,Total water stress,loss_million_tonnes,10,19.41369445113397,3.8896065226777394,17.002891351686202,21.82449755058174,19.414 ± 3.890 (17.003-21.824)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,total,Total,wet,Waterlogging stress,loss_pct,10,0.3374640580811802,0.04943191980044647,0.3068258367670796,0.3681022793952808,0.337 ± 0.049 (0.307-0.368)
+ssp585,future_2070_2100,2070,2100,whea,Wheat,total,Total,wet,Waterlogging stress,loss_million_tonnes,10,1.3542717692941075,0.20070585209941,1.229872993351739,1.4786705452364761,1.354 ± 0.201 (1.230-1.479)

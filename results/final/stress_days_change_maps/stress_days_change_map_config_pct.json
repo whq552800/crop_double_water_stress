@@ -1,0 +1,28 @@
+{
+  "historical_period": [
+    1990,
+    2019
+  ],
+  "future_period": [
+    2070,
+    2100
+  ],
+  "scenarios": [
+    "ssp126",
+    "ssp585"
+  ],
+  "gcms": [
+    "CanESM5",
+    "CNRM-CM6-1",
+    "CNRM-ESM2-1",
+    "EC-Earth3",
+    "GFDL-ESM4",
+    "IPSL-CM6A-LR",
+    "MIROC6",
+    "MPI-ESM1-2-HR",
+    "MRI-ESM2-0",
+    "UKESM1-0-LL"
+  ],
+  "aggregation": "Area-weighted across irrigation modes and crops using MIRCA crop fractions, normalized by growing-season length. The all-hazard map sums drought and waterlogging stress-day share changes before crop-area aggregation.",
+  "cache": "D:\\Software\\codex\\drought&waterlogging\\source_index\\stress_days_change_maps\\stress_days_change_pct_2070_2100_minus_1990_2019.nc"
+}

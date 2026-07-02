@@ -1,0 +1,19 @@
+﻿scenario,period,year_min,year_max,crop,crop_label,mode,mode_label,hazard,hazard_label,metric,n_samples,mean,sd,ci95_low,ci95_high,mean_sd_ci
+historical,historical_1990_2019,1990,2019,all4,All four crops,total,Total,dry,Drought stress,loss_pct,1,0.9822369219958186,,,,0.982
+historical,historical_1990_2019,1990,2019,all4,All four crops,total,Total,dry,Drought stress,loss_million_tonnes,1,18.743984580183202,,,,18.744
+historical,historical_1990_2019,1990,2019,all4,All four crops,total,Total,total,Total water stress,loss_pct,1,1.6713681570200072,,,,1.671
+historical,historical_1990_2019,1990,2019,all4,All four crops,total,Total,total,Total water stress,loss_million_tonnes,1,31.907049062562585,,,,31.907
+historical,historical_1990_2019,1990,2019,all4,All four crops,total,Total,wet,Waterlogging stress,loss_pct,1,0.3504481781741137,,,,0.350
+historical,historical_1990_2019,1990,2019,all4,All four crops,total,Total,wet,Waterlogging stress,loss_million_tonnes,1,6.695646121989913,,,,6.696
+ssp126,future_2070_2100,2070,2100,all4,All four crops,total,Total,dry,Drought stress,loss_pct,10,2.408600463710151,0.361315981713514,2.1846544980921987,2.6325464293281033,2.409 ± 0.361 (2.185-2.633)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,total,Total,dry,Drought stress,loss_million_tonnes,10,30.830769421706417,4.613655544017849,27.97119608942873,33.690342753984105,30.831 ± 4.614 (27.971-33.690)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,total,Total,total,Total water stress,loss_pct,10,4.847560552119462,0.3712210038827607,4.6174753901569705,5.077645714081953,4.848 ± 0.371 (4.617-5.078)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,total,Total,total,Total water stress,loss_million_tonnes,10,62.12040118267239,4.7242291961096505,59.19229359079132,65.04850877455345,62.120 ± 4.724 (59.192-65.049)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,total,Total,wet,Waterlogging stress,loss_pct,10,1.840797023944767,0.061675146830441896,1.802570371898903,1.8790236759906311,1.841 ± 0.062 (1.803-1.879)
+ssp126,future_2070_2100,2070,2100,all4,All four crops,total,Total,wet,Waterlogging stress,loss_million_tonnes,10,23.664742906716555,0.8230120882693756,23.15463472952313,24.174851083909978,23.665 ± 0.823 (23.155-24.175)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,total,Total,dry,Drought stress,loss_pct,10,2.992808357957857,0.4566229666935739,2.709790511045657,3.275826204870057,2.993 ± 0.457 (2.710-3.276)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,total,Total,dry,Drought stress,loss_million_tonnes,10,39.26904509066778,5.972502704326884,35.56724956273891,42.970840618596654,39.269 ± 5.973 (35.567-42.971)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,total,Total,total,Total water stress,loss_pct,10,5.512884373372365,0.46899139403459394,5.222200495771667,5.803568250973062,5.513 ± 0.469 (5.222-5.804)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,total,Total,total,Total water stress,loss_million_tonnes,10,72.42590409275695,6.190844935385852,68.58877864795646,76.26302953755744,72.426 ± 6.191 (68.589-76.263)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,total,Total,wet,Waterlogging stress,loss_pct,10,1.7034963120230509,0.15801507062073836,1.6055575565754485,1.8014350674706532,1.703 ± 0.158 (1.606-1.801)
+ssp585,future_2070_2100,2070,2100,all4,All four crops,total,Total,wet,Waterlogging stress,loss_million_tonnes,10,22.465031576984096,2.1376323750332062,21.14011330436094,23.78994984960725,22.465 ± 2.138 (21.140-23.790)

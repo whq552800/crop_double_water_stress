@@ -1,0 +1,24 @@
+{
+  "crops": [
+    "maiz",
+    "soyb",
+    "rice",
+    "whea"
+  ],
+  "level": "adm1",
+  "year_min": 1980,
+  "year_max": 2019,
+  "dry_thr_days": 7.0,
+  "wet_thr_days": 7.0,
+  "event_area_share_threshold": 0.2,
+  "cil_dir": "F:\\crop_filed\\impact_data\\for_regressions_full_csv",
+  "cwatm_dir": "F:\\paper4\\yie\\gswp3_long",
+  "frac_dir": "F:\\paper4\\data\\frac\\30-arcminute_fraction",
+  "potential_yield_dir": "F:\\GAEZ_potential_yield\\Hist_CRUTS32_nc",
+  "admin_shapefile": "D:\\AAUDE\\cil-ag-replication-package\\Fig1\\Crop_Coverage\\data\\shapes\\all_countries.shp",
+  "model_csv": "D:\\Software\\codex\\drought&waterlogging\\source_index\\validation_water_stress_rebuilt\\adm1\\1980_2019\\model_cwatm_raw_rebuilt_adm1.csv",
+  "obs_csv": "D:\\Software\\codex\\drought&waterlogging\\source_index\\validation_water_stress_rebuilt\\adm1\\1980_2019\\obs_cil_5yr_anomaly_adm1.csv",
+  "points_csv": "D:\\Software\\codex\\drought&waterlogging\\source_index\\validation_water_stress_rebuilt\\adm1\\1980_2019\\cil_cwatm_validation_points_adm1.csv",
+  "metrics_csv": "D:\\Software\\codex\\drought&waterlogging\\source_index\\validation_water_stress_rebuilt\\adm1\\1980_2019\\cil_cwatm_validation_metrics_adm1.csv",
+  "note": "Observed values are CIL 5-year yield-loss anomalies during model-identified water-stress years; they are not direct observational attribution of drought or waterlogging causality."
+}

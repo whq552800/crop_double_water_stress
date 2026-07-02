@@ -1,0 +1,9 @@
+﻿level,crop,hazard,observed_loss,simulated_loss,year_min,year_max,n,pearson_r,rmse_pct,mean_bias_pct_points,median_bias_pct_points
+adm1,maiz,dry,obs_loss_pct,sim_yield_anomaly_loss_pct,1980,2019,5605,0.15452067519729382,12.609151583149579,-4.8449631566176246,0.0
+adm1,maiz,wet,obs_loss_pct,sim_yield_anomaly_loss_pct,1980,2019,3134,0.0841391402269864,10.29761530694225,-3.756115346210811,0.0
+adm1,soyb,dry,obs_loss_pct,sim_yield_anomaly_loss_pct,1980,2019,2223,0.076956357867699,12.17321212332897,-4.968462571581517,0.0
+adm1,soyb,wet,obs_loss_pct,sim_yield_anomaly_loss_pct,1980,2019,1192,-0.1009733776350101,10.618830523504204,-3.696143064723551,0.0
+adm1,rice,dry,obs_loss_pct,sim_yield_anomaly_loss_pct,1980,2019,3547,0.0783246787516508,10.067044728336803,-3.06035679783797,0.0
+adm1,rice,wet,obs_loss_pct,sim_yield_anomaly_loss_pct,1980,2019,3025,0.02035805435655208,9.272770646062641,-2.4395340627141904,0.0
+adm1,whea,dry,obs_loss_pct,sim_yield_anomaly_loss_pct,1980,2019,4804,0.17552466335398348,12.1704921936252,-4.986005510381971,0.0
+adm1,whea,wet,obs_loss_pct,sim_yield_anomaly_loss_pct,1980,2019,2931,0.09217194484492078,11.304605460895809,-4.812001691224052,0.0

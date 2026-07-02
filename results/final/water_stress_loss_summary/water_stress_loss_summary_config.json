@@ -1,0 +1,49 @@
+{
+  "loss_definition": "max(no-water-stress production - water-stress production, 0) / no-water-stress production",
+  "absolute_loss_unit": "million tonnes per year",
+  "yield_dir": "F:\\paper4\\yie",
+  "frac_dir": "F:\\paper4\\data\\frac\\30-arcminute_fraction",
+  "potential_yield_dir": "F:\\GAEZ_potential_yield\\Hist_CRUTS32_nc",
+  "cellarea": "D:\\Edge_download\\cellarea.nc",
+  "area_conversion": "cellarea m2 converted to hectares before multiplying GAEZ potential yield in t/ha",
+  "historical_run": "gswp3_long",
+  "future_gcms": [
+    "CanESM5",
+    "CNRM-CM6-1",
+    "CNRM-ESM2-1",
+    "EC-Earth3",
+    "GFDL-ESM4",
+    "IPSL-CM6A-LR",
+    "MIROC6",
+    "MPI-ESM1-2-HR",
+    "MRI-ESM2-0",
+    "UKESM1-0-LL"
+  ],
+  "scenarios": [
+    "ssp126",
+    "ssp585"
+  ],
+  "periods": {
+    "historical_1980_2019": [
+      1980,
+      2019
+    ],
+    "future_2020_2100": [
+      2020,
+      2100
+    ],
+    "near_2020_2049": [
+      2020,
+      2049
+    ],
+    "mid_2050_2079": [
+      2050,
+      2079
+    ],
+    "late_2080_2100": [
+      2080,
+      2100
+    ]
+  },
+  "note": "Historical SD/CI uses annual samples. Future annual summary uses GCM-year samples; future GCM-period summary first averages each GCM within a period, then estimates SD/CI across GCMs."
+}
