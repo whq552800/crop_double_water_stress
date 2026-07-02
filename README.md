@@ -1,21 +1,24 @@
 # crop_double_water_stress
 
-This repository hosts the analysis code and final outputs for the crop double water stress study.
+This repository contains the public code and final outputs for a crop double water stress analysis. The layout is intentionally compact: code is split by analysis stage, and final outputs are grouped under one results folder.
 
-## Layout
+## Repository layout
 
-- `final/` - finalized code used for analysis and validation.
-- `raw_notebooks/` - original notebooks kept for provenance.
-- `results/final/` - final tables, figures, validation outputs, and manuscript-facing summaries.
+- `code/` - readable analysis scripts split by workflow stage. Start with `code/README.md`.
+- `results/final/` - final manuscript-facing tables, figures, validation outputs, and summary files. Start with `results/final/README.md`.
 
-## Start here
+## Code structure
 
-1. `results/final/final_submission_summary.md`
-2. `results/final/missing_data_report.md`
-3. `results/final/README.md`
+The original notebooks are not kept in this GitHub repository because they are large and hard to review. Their logic has been exported and split into staged scripts:
 
-## Notes
+1. preprocessing and NetCDF preparation
+2. data loading and yield-loss metrics
+3. spatial loss maps
+4. country/trade/risk analysis
+5. validation workflows
 
-- The code still contains machine-specific absolute paths, so it is best treated as archival and review material rather than a plug-and-play package.
-- One archival PDF in `validation_water_stress_rebuilt/adm1/1980_2019/` is intentionally omitted from GitHub because it is far too large for a normal repository; the compact PDF and PNG variants in the same folder are included.
-- File names are kept plain and descriptive so people can skim the repository without opening the code first.
+## Reuse notes
+
+The scripts preserve the analysis logic used for the manuscript, but several paths still point to local disks used during the original computation. Before rerunning the workflow elsewhere, update the path blocks and verify NetCDF dimensions, units, masks, and time coordinates.
+
+One very large archival PDF is omitted from GitHub; compact PDF/PNG versions are included in the same result folder.
