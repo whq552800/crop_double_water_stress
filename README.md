@@ -40,25 +40,3 @@ The analysis workflow is divided into stages:
 4. country-level trade and risk analysis
 5. validation workflows
 6. statistical analysis and figure generation
-
-## Reproducibility notes
-
-The repository includes the analysis logic and manuscript-facing outputs. Large input datasets are not redistributed and should be obtained from their original public sources, including ISIMIP climate forcing, CMIP6 projections, SPAM crop distribution, GAEZ potential yield data, FAOSTAT production and trade data, and GGCMI crop calendar information.
-
-Before rerunning the workflow:
-
-- update local path configurations in analysis scripts;
-- verify NetCDF dimensions, units, masks, and time coordinates;
-- ensure that required input datasets are available.
-
-## Software and code availability
-
-The hydrological simulations are based on the open-source Community Water Model (CWatM). The modified CWatM modules used in this study are provided in `Module/`.
-
-The analysis scripts used for preprocessing, yield-loss calculation, validation, uncertainty analysis, and figure generation are provided in `code/`.
-
-The CWatM model is available at:
-
-https://cwatm.iiasa.ac.at/
-
-The complete repository provides the computational workflow supporting the manuscript results.
