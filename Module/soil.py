@@ -610,57 +610,34 @@ class soil(object):
 
                 
                 spei = self.var.spei
-                thresl=1.8
-                thres2=-1
-                wet_stress1=((self.var.w1[No]>wfc1)&(spei>thresl))
-                dry_stress1=((self.var.w1[No]<wCrit1)&(spei<thres2))
-                wet_stress2=((self.var.w2[No]>wfc2)&(spei>thresl))
-                dry_stress2=((self.var.w2[No]<wCrit2)&(spei<thres2))
-                wet_stress3=((self.var.w3[No]>wfc3)&(spei>thresl))
-                dry_stress3=((self.var.w3[No]<wCrit3)&(spei<thres2))
-                # self.var.drystress[No]=np.where(dry_stress1&dry_stress2,1,0)
-                # self.var.wetstress[No]=np.where(wet_stress1&wet_stress2,1,0)
-                drystress=np.where(dry_stress1|dry_stress2,1,0)
-                wetstress=np.where(wet_stress1 & wet_stress2&wet_stress3,1,0)
-                
-                # print((vars(self.var)[f'drystress_{i}']).sum())
-                # print(self.var.drystress[No].sum())
-                if No==3:
-                    # print((self.var.rws_1>0.6).sum())
-                    # rws1 = np.where(dry_stress1|wet_stress1,self.var.rws_3,rws1)
-                    # rws2 = np.where(dry_stress2|wet_stress2,self.var.rws_3,rws2)
-                    # rws3 = np.where(dry_stress3|wet_stress3,self.var.rws_3,rws3)
-                    rws1 = np.where(drystress,self.var.rws_3,rws1)
-                    rws1 = np.where(wetstress,self.var.rws_3*0.7+0.3*rws1_ori,rws1)
-                    rws2 = np.where(wetstress,self.var.rws_3*0.7+0.3*rws2_ori,rws2)
-                    rws2 = np.where(drystress,self.var.rws_3,rws2)
-                    rws3 = np.where(drystress,self.var.rws_3,rws3)
-                    rws3 = np.where(wetstress,self.var.rws_3*0.7+0.3*rws3_ori,rws3)
-                else:
-                    # rws1 = np.where(dry_stress1|wet_stress1,self.var.rws_1,rws1)
-                    # rws2 = np.where(dry_stress2|wet_stress2,self.var.rws_1,rws2)
-                    # rws3 = np.where(dry_stress3|wet_stress3,self.var.rws_1,rws3)
-                    rws1 = np.where(drystress,self.var.rws_1,rws1)
-                    rws1 = np.where(wetstress,self.var.rws_1*0.7+0.3*rws1_ori,rws1)
-                    rws2 = np.where(drystress,self.var.rws_1,rws2)
-                    rws2 = np.where(wetstress,self.var.rws_1*0.7+0.3*rws2_ori,rws2)
-                    rws3 = np.where(drystress,self.var.rws_1,rws3)
-                    rws3 = np.where(wetstress,self.var.rws_1*0.7+0.3*rws3_ori,rws3)
-                
-                
-                # drystress=np.where(spei<thres2,1,0)
-                # wetstress=np.where((spei>thresl),1,0)
-                for c in range(len(self.var.Crops)):
-                    self.var.wetstress_nonIrr[c]    = np.where(self.var.currentKC[c] * self.var.activatedCrops[c]*self.var.PotET_crop[c],wetstress,0)
-                    self.var.drystress_nonIrr[c]    = np.where(self.var.currentKC[c] * self.var.activatedCrops[c]*self.var.PotET_crop[c],drystress,0)
-                    # if No==1:
-                    #     self.var.wetstress_nonIrr[c]    = np.where(self.var.currentKC[c] * self.var.activatedCrops[c]*self.var.PotET_crop[c]*self.var.fracCrops_nonIrr[c]> 0,wetstress,0)
-                    #     self.var.drystress_nonIrr[c]    = np.where(self.var.currentKC[c] * self.var.activatedCrops[c]*self.var.PotET_crop[c]*self.var.fracCrops_nonIrr[c]> 0,drystress,0)
-                        
+                thresl = 1.0
+                thres2 = -1.0
+                wet_stress1 = ((self.var.w1[No] > wfc1) & (spei > thresl))
+                dry_stress1 = ((self.var.w1[No] < wCrit1) & (spei < thres2))
+                wet_stress2 = ((self.var.w2[No] > wfc2) & (spei > thresl))
+                dry_stress2 = ((self.var.w2[No] < wCrit2) & (spei < thres2))
+                wet_stress3 = ((self.var.w3[No] > wfc3) & (spei > thresl))
+                dry_stress3 = ((self.var.w3[No] < wCrit3) & (spei < thres2))
 
-                    # elif No==3:
-                    #     self.var.wetstress_Irr[c]    = np.where(self.var.currentKC[c] * self.var.activatedCrops[c]*self.var.PotET_crop[c]*self.var.fracCrops_Irr[c]> 0,wetstress,0)
-                    #     self.var.drystress_Irr[c]    = np.where(self.var.currentKC[c] * self.var.activatedCrops[c]*self.var.PotET_crop[c]*self.var.fracCrops_Irr[c]> 0,drystress,0)
+                drystress = np.where(dry_stress1 & dry_stress2 & dry_stress3, 1, 0)
+                wetstress = np.where(wet_stress1 & wet_stress2 & wet_stress3, 1, 0)
+
+                rws_norm = self.var.rws_3 if No == 3 else self.var.rws_1
+                rws1 = np.where(drystress | wetstress, rws_norm, rws1)
+                rws2 = np.where(drystress | wetstress, rws_norm, rws2)
+                rws3 = np.where(drystress | wetstress, rws_norm, rws3)
+
+                for c in range(len(self.var.Crops)):
+                    active_c = (self.var.currentKC[c] * self.var.activatedCrops[c] * self.var.PotET_crop[c]) > 0
+                    if No == 1:
+                        self.var.wetstress_nonIrr[c] = np.where(active_c, wetstress, 0)
+                        self.var.drystress_nonIrr[c] = np.where(active_c, drystress, 0)
+                    elif No == 2 and self.var.Crops_names[c][:4] == 'rice':
+                        self.var.wetstress_Irr[c] = np.where(active_c, wetstress, 0)
+                        self.var.drystress_Irr[c] = np.where(active_c, drystress, 0)
+                    elif No == 3 and self.var.Crops_names[c][:4] != 'rice':
+                        self.var.wetstress_Irr[c] = np.where(active_c, wetstress, 0)
+                        self.var.drystress_Irr[c] = np.where(active_c, drystress, 0)
                         
 
         else:

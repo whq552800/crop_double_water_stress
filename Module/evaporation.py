@@ -607,23 +607,20 @@ class evaporation(object):
         # checkOption('includeCrops') and checkOption('includeCropSpecificWaterUse')
         if self.var.includeCrops:
 
-            # only goes through ones
-            if No == 3:
-
+            # Compute crop-specific potential ET for rainfed (No=1), irrigated paddy (No=2), and irrigated upland (No=3)
+            if No in [1, 2, 3]:
                 for c in range(len(self.var.Crops)):
-
-                    self.var.PotET_crop[c] = (self.var.cropCorrect * self.var.crop_correct_landCover[No] * 
+                    self.var.PotET_crop[c] = (self.var.cropCorrect * self.var.crop_correct_landCover[No] *
                                               self.var.currentKC[c] * self.var.ETRef)
+
+            # Accumulate monthly totals and segment summaries once per timestep (on No == 3)
+            if No == 3:
+                for c in range(len(self.var.Crops)):
                     self.var.totalPotET_month[c] += self.var.PotET_crop[c]
-                    # self.var.cropCorrect * self.var.currentKC[c] * self.var.ETRef
-                    # np.maximum(0., self.var.cropCorrect * self.var.currentKC[c] * self.var.ETRef - 
-                    #           self.var.potBareSoilEvap - self.var.snowEvap)
 
                     # For creating named crop maps
                     vars(self.var)[self.var.Crops_names[c] + '_Irr'] = self.var.fracCrops_Irr[c].copy()
                     vars(self.var)[self.var.Crops_names[c] + '_nonIrr'] = self.var.fracCrops_nonIrr[c].copy()
-
-                    
 
                     if 'adminSegments' in binding:
                         self.var.totalPotET_month_segment[c] = npareaaverage(self.var.totalPotET_month[c], self.var.adminSegments)

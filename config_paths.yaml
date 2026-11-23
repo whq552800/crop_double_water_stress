@@ -1,0 +1,25 @@
+# Centralized Path Configuration for Crop Double Water Stress (1990-2019 Unified Baseline)
+baseline_window:
+  start_year: 1990
+  end_year: 2019
+future_window:
+  start_year: 2070
+  end_year: 2100
+
+paths:
+  cwatm_sim_root: "./data/cwatm_outputs"
+  cwatm_inputs_figshare: "./data/cwatm_inputs_figshare"
+  isimip_forcing_root: "./data/isimip3_forcing"
+  mirca_os_area_dir: "./data/cwatm_inputs_figshare/mirca_os_30arcmin_aligned"
+  spam2020_sensitivity_dir: "./data/sensitivity/spam2020_30arcmin"
+  gaez_v4_no_co2_dir: "./data/gaez_v4_200b_noco2"
+  validation_benchmarks:
+    cil_subnational: "./data/validation/cil_adm1_1990_2015"
+    faostat_national: "./data/validation/faostat_1990_2019"
+    gdhy_gridded: "./data/validation/gdhy_v1.3_1990_2016"
+    usda_nass_rma: "./data/validation/usda_nass_rma_1990_2016"
+    gdis_emdat: "./data/validation/gdis_1990_2016"
+    modis_gfd: "./data/validation/modis_gfd_2000_2016"
+    era5_ismn: "./data/validation/soil_moisture_1990_2019"
+  output_figures_dir: "./outputs/figures"
+  output_tables_dir: "./outputs/tables"
