@@ -6,9 +6,15 @@ The study develops a process-based framework to quantify crop yield losses attri
 
 ## Repository layout
 
-- `Module/` - modified CWatM modules used for the crop-water stress extension. These modules implement the updated soil-water and evapotranspiration processes supporting drought and waterlogging attribution.
+- `Module/` - modified CWatM modules (`soil.py`, `evaporation.py`) implementing two-sided root-zone drought and waterlogging stress and counterfactual replacement.
+- `settings/` - CWatM run configuration files (`settings_1_waterstress.ini`, `settings_2_cf_dry_only.ini`, `settings_3_cf_wet_only.ini`, `settings_4_cf_both.ini`), `generate_settings.py`, and crop hydraulic/stage parameters (`Table_S2_Soil_and_Crop_Hydraulic_Parameters.csv`).
 - `code/` - analysis scripts split by workflow stage. Start with `code/README.md`.
 - `results/final/` - final manuscript-facing tables, figures, validation outputs, and summary files. Start with `results/final/README.md`.
+- `environment.yml`, `requirements.txt`, and `config_paths.yaml` - pinned Python environment definitions and centralized path configurations.
+
+## Gridded Input Datasets
+
+Study-prepared 0.5-degree global gridded input datasets (near-normal `k_s,norm` climatology `rws_climatology_time366_under_spei_-0.5_0.5_chunked.nc`, cropland land-cover fractions, FAO-56 growth-stage crop calendars, and aligned MIRCA-OS harvested-area rasters) are archived on Figshare at https://figshare.com/s/58602e5d64290c79976f.
 
 ## Model modifications
 
