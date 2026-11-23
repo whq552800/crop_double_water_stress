@@ -2,7 +2,7 @@
 # Paths remain project-specific and may need to be edited before rerunning.
 # Part 1: input readers, database assembly, event occurrence, and yield-loss metrics.
 
-# Extracted from D:\AAUDE\paper\paper4\revision_v2\code\analysis.ipynb
+# Extracted from ./code/analysis.ipynb
 # Generated for read-only public-release audit. Review before reuse.
 
 # %% cell 1
@@ -46,7 +46,7 @@ def potential_yield(base_dir, ssp, year, crops, modes):
     wheat = wwhe + swhe
     rice 文件前缀 = ricw
     """
-    cellarea = xr.open_dataset(r'D:\Edge_download\cellarea.nc').cellarea30min
+    cellarea = xr.open_dataset(r'./data/external/cellarea.nc').cellarea30min
 
     yield_out = {}
     for crop in crops:
@@ -97,8 +97,8 @@ def open_da(path, varname):
         da = da.rename({"time": "year"})
     return da.where(da!=0)
 def distribuction():
-    AR = r"F:\paper4\data\frac\30-arcminute_fraction"
-    cellarea=xr.open_dataset(r'D:\Edge_download\cellarea.nc').cellarea30min 
+    AR = r"./data/cwatm_inputs_figshare"
+    cellarea=xr.open_dataset(r'./data/external/cellarea.nc').cellarea30min 
     tif_map = {
         "wwh_Irr":     r"MIRCA-OS_Wheat_2000_irr_30arcmin_winter_aligned.tif",
         "swh_Irr":     r"MIRCA-OS_Wheat_2000_irr_30arcmin_spring_aligned.tif",
@@ -419,7 +419,7 @@ def plot_bar_crops_irrig_rainfed(summary, title="Mean yield losses (± interannu
 
     ax.set_ylim(bottom=0)
     plt.savefig(
-        rf"D:\AAUDE\paper\paper4\revision_v2\fig\manu_fig\hist_allcrops_loss.pdf",
+        rf"./outputs/figures/hist_allcrops_loss.pdf",
         dpi=300,
         bbox_inches="tight"
     )
@@ -455,10 +455,10 @@ def build_db_all_gcms(crops, modes, gcms, test):
 
     # 2) 历史（共用，不依赖 GCM）
     hist_cfg = {
-        "stress_fp": rf"F:\paper4\yie\{test}",
-        "yield_fp":  rf"F:\paper4\yie\{test}",
-        "gs_fp":     r"F:\paper4\data\calendar\after_clip",
-        "pot_dir":   r"F:\GAEZ_potential_yield\Hist_CRUTS32_nc",
+        "stress_fp": rf"./data/cwatm_outputs/{test}",
+        "yield_fp":  rf"./data/cwatm_outputs/{test}",
+        "gs_fp":     r"./data/cwatm_inputs_figshare/after_clip",
+        "pot_dir":   r"./data/gaez_v4_200b_noco2/hist",
         "pot_ssp":   "Hist",
         "pot_year":  "CRUTS32_8110L",
     }
@@ -482,18 +482,18 @@ def build_db_all_gcms(crops, modes, gcms, test):
 
         scen_cfg = {
             "ssp126": {
-                "stress_fp": rf"F:\paper4\yie\{gcm}\ssp126",
-                "yield_fp":  rf"F:\paper4\yie\{gcm}\ssp126",
-                "gs_fp":     r"F:\paper4\data\calendar\ssp126",
-                "pot_dir":   r"F:\GAEZ_potential_yield\global_mean_nc",
+                "stress_fp": rf"./data/cwatm_outputs/{gcm}/ssp126",
+                "yield_fp":  rf"./data/cwatm_outputs/{gcm}/ssp126",
+                "gs_fp":     r"./data/cwatm_inputs_figshare/calendars/ssp126",
+                "pot_dir":   r"./data/gaez_v4_200b_noco2/future",
                 "pot_ssp":   "ssp126",
                 "pot_year":  "2080sH",
             },
             "ssp585": {
-                "stress_fp": rf"F:\paper4\yie\{gcm}\ssp585",
-                "yield_fp":  rf"F:\paper4\yie\{gcm}\ssp585",
-                "gs_fp":     r"F:\paper4\data\calendar\ssp585",
-                "pot_dir":   r"F:\GAEZ_potential_yield\global_mean_nc",
+                "stress_fp": rf"./data/cwatm_outputs/{gcm}/ssp585",
+                "yield_fp":  rf"./data/cwatm_outputs/{gcm}/ssp585",
+                "gs_fp":     r"./data/cwatm_inputs_figshare/calendars/ssp585",
+                "pot_dir":   r"./data/gaez_v4_200b_noco2/future",
                 "pot_ssp":   "ssp585",
                 "pot_year":  "2080sH",
             },
@@ -535,7 +535,7 @@ import numpy as np
 import pandas as pd
 import xarray as xr
 
-OUT_DIR = r"D:\AAUDE\paper_v2\paper4\tables_from_DB"
+OUT_DIR = r"./outputs/tables"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # ----------------------------
@@ -802,7 +802,7 @@ summary_hist = summarize_all(
 )
 
 fig, ax = plot_bar_crops_irrig_rainfed(summary_hist, title="Historical mean yield losses (± interannual SD)")
-plt.savefig(rf'D:\AAUDE\paper_v2\paper4\outputs_loss_maps\{scen}.pdf')
+plt.savefig(rf'./outputs/figures/loss_maps/{scen}.pdf')
 plt.show()
 
 # %% cell 7
@@ -816,7 +816,7 @@ summary_hist = summarize_all(
 )
 
 fig, ax = plot_bar_crops_irrig_rainfed(summary_hist, title="Historical mean yield losses (± interannual SD)")
-plt.savefig(rf'D:\AAUDE\paper_v2\paper4\outputs_loss_maps\{scen}.pdf')
+plt.savefig(rf'./outputs/figures/loss_maps/{scen}.pdf')
 plt.show()
 
 # %% cell 8

@@ -1,0 +1,117 @@
+Dimension,Scenario_or_Spec,Crop,Drought_Loss_pct,Waterlogging_Loss_pct,Dry_to_Wet_Ratio
+R1 Counterfactual (fixed),hist_1990_2019,maiz,1.159,0.66,1.755
+R1 Counterfactual (fixed),ssp126_2070_2100,maiz,3.759,2.452,1.533
+R1 Counterfactual (fixed),ssp585_2070_2100,maiz,4.577,2.18,2.1
+R1 Counterfactual (fixed),hist_1990_2019,soyb,0.842,0.505,1.667
+R1 Counterfactual (fixed),ssp126_2070_2100,soyb,1.981,1.463,1.354
+R1 Counterfactual (fixed),ssp585_2070_2100,soyb,2.449,1.36,1.801
+R1 Counterfactual (fixed),hist_1990_2019,rice,0.693,1.306,0.531
+R1 Counterfactual (fixed),ssp126_2070_2100,rice,3.801,6.543,0.581
+R1 Counterfactual (fixed),ssp585_2070_2100,rice,3.49,6.189,0.564
+R1 Counterfactual (fixed),hist_1990_2019,whea,0.922,0.233,3.951
+R1 Counterfactual (fixed),ssp126_2070_2100,whea,3.606,0.386,9.346
+R1 Counterfactual (fixed),ssp585_2070_2100,whea,4.595,0.277,16.593
+R1 Counterfactual (moving_clim_nonhaz),hist_1990_2019,maiz,1.717,0.485,3.539
+R1 Counterfactual (moving_clim_nonhaz),ssp126_2070_2100,maiz,1.867,0.414,4.509
+R1 Counterfactual (moving_clim_nonhaz),ssp585_2070_2100,maiz,1.755,0.396,4.427
+R1 Counterfactual (moving_clim_nonhaz),hist_1990_2019,soyb,1.699,0.415,4.095
+R1 Counterfactual (moving_clim_nonhaz),ssp126_2070_2100,soyb,1.665,0.215,7.758
+R1 Counterfactual (moving_clim_nonhaz),ssp585_2070_2100,soyb,1.503,0.207,7.276
+R1 Counterfactual (moving_clim_nonhaz),hist_1990_2019,rice,0.272,0.237,1.144
+R1 Counterfactual (moving_clim_nonhaz),ssp126_2070_2100,rice,0.295,0.292,1.01
+R1 Counterfactual (moving_clim_nonhaz),ssp585_2070_2100,rice,0.317,0.315,1.006
+R1 Counterfactual (moving_clim_nonhaz),hist_1990_2019,whea,1.746,0.574,3.043
+R1 Counterfactual (moving_clim_nonhaz),ssp126_2070_2100,whea,2.394,0.246,9.717
+R1 Counterfactual (moving_clim_nonhaz),ssp585_2070_2100,whea,1.912,0.152,12.549
+R1 Counterfactual (moving_ma5),hist_1990_2019,maiz,0.918,0.275,3.341
+R1 Counterfactual (moving_ma5),ssp126_2070_2100,maiz,0.91,0.182,5.008
+R1 Counterfactual (moving_ma5),ssp585_2070_2100,maiz,0.843,0.169,4.978
+R1 Counterfactual (moving_ma5),hist_1990_2019,soyb,0.924,0.24,3.854
+R1 Counterfactual (moving_ma5),ssp126_2070_2100,soyb,0.793,0.094,8.456
+R1 Counterfactual (moving_ma5),ssp585_2070_2100,soyb,0.696,0.087,8.035
+R1 Counterfactual (moving_ma5),hist_1990_2019,rice,0.2,0.177,1.13
+R1 Counterfactual (moving_ma5),ssp126_2070_2100,rice,0.156,0.147,1.057
+R1 Counterfactual (moving_ma5),ssp585_2070_2100,rice,0.164,0.158,1.038
+R1 Counterfactual (moving_ma5),hist_1990_2019,whea,0.741,0.247,2.998
+R1 Counterfactual (moving_ma5),ssp126_2070_2100,whea,1.134,0.104,10.916
+R1 Counterfactual (moving_ma5),ssp585_2070_2100,whea,0.916,0.06,15.3
+R7 Specification Sensitivity,"Baseline (MIRCA2000, A*Yp, >=1d, 1990-2019)",maiz,4.85,2.307,2.102
+R7 Specification Sensitivity,"Baseline (MIRCA2000, A*Yp, >=1d, 1990-2019)",soyb,2.536,1.402,1.809
+R7 Specification Sensitivity,"Baseline (MIRCA2000, A*Yp, >=1d, 1990-2019)",rice,3.743,6.649,0.563
+R7 Specification Sensitivity,"Baseline (MIRCA2000, A*Yp, >=1d, 1990-2019)",whea,4.854,0.29,16.727
+R7 Specification Sensitivity,Window 1980-2019 (40 yr),maiz,4.85,2.307,2.102
+R7 Specification Sensitivity,Window 1980-2019 (40 yr),soyb,2.536,1.402,1.809
+R7 Specification Sensitivity,Window 1980-2019 (40 yr),rice,3.743,6.649,0.563
+R7 Specification Sensitivity,Window 1980-2019 (40 yr),whea,4.854,0.29,16.727
+R7 Specification Sensitivity,Unshifted MIRCA-OS grid,maiz,5.073,2.393,2.119
+R7 Specification Sensitivity,Unshifted MIRCA-OS grid,soyb,2.612,1.446,1.806
+R7 Specification Sensitivity,Unshifted MIRCA-OS grid,rice,3.778,6.608,0.572
+R7 Specification Sensitivity,Unshifted MIRCA-OS grid,whea,4.859,0.313,15.541
+R7 Specification Sensitivity,SPAM2020V2r2 Harvested area,maiz,4.284,2.247,1.906
+R7 Specification Sensitivity,SPAM2020V2r2 Harvested area,soyb,2.451,1.367,1.793
+R7 Specification Sensitivity,SPAM2020V2r2 Harvested area,rice,3.829,6.62,0.578
+R7 Specification Sensitivity,SPAM2020V2r2 Harvested area,whea,4.835,0.208,23.212
+R7 Specification Sensitivity,SPAM2020V2r2 Physical area,maiz,4.321,1.93,2.238
+R7 Specification Sensitivity,SPAM2020V2r2 Physical area,soyb,2.501,1.329,1.882
+R7 Specification Sensitivity,SPAM2020V2r2 Physical area,rice,3.85,6.369,0.605
+R7 Specification Sensitivity,SPAM2020V2r2 Physical area,whea,4.953,0.2,24.713
+R7 Specification Sensitivity,Pure harvested-area weight (Yp = 1),maiz,4.465,2.095,2.131
+R7 Specification Sensitivity,Pure harvested-area weight (Yp = 1),soyb,2.499,1.493,1.674
+R7 Specification Sensitivity,Pure harvested-area weight (Yp = 1),rice,4.078,7.725,0.528
+R7 Specification Sensitivity,Pure harvested-area weight (Yp = 1),whea,4.185,0.623,6.72
+R7 Specification Sensitivity,Fixed Historical Yp in Future,maiz,4.687,2.203,2.128
+R7 Specification Sensitivity,Fixed Historical Yp in Future,soyb,2.566,1.357,1.89
+R7 Specification Sensitivity,Fixed Historical Yp in Future,rice,3.877,7.116,0.545
+R7 Specification Sensitivity,Fixed Historical Yp in Future,whea,4.748,0.52,9.13
+R7 Specification Sensitivity,Mode-specific Irr stress mask,maiz,2.783,1.557,1.787
+R7 Specification Sensitivity,Mode-specific Irr stress mask,soyb,1.838,1.135,1.62
+R7 Specification Sensitivity,Mode-specific Irr stress mask,rice,2.575,5.746,0.448
+R7 Specification Sensitivity,Mode-specific Irr stress mask,whea,4.519,0.198,22.825
+R7 Specification Sensitivity,Duration >= 3 days,maiz,4.689,2.168,2.163
+R7 Specification Sensitivity,Duration >= 3 days,soyb,2.437,1.303,1.87
+R7 Specification Sensitivity,Duration >= 3 days,rice,3.174,6.577,0.483
+R7 Specification Sensitivity,Duration >= 3 days,whea,4.845,0.247,19.606
+R7 Specification Sensitivity,Duration >= 5 days,maiz,4.548,2.055,2.213
+R7 Specification Sensitivity,Duration >= 5 days,soyb,2.358,1.23,1.917
+R7 Specification Sensitivity,Duration >= 5 days,rice,2.689,6.488,0.415
+R7 Specification Sensitivity,Duration >= 5 days,whea,4.837,0.219,22.041
+R7 Specification Sensitivity,Duration >= 7 days (1 week),maiz,4.424,1.944,2.275
+R7 Specification Sensitivity,Duration >= 7 days (1 week),soyb,2.296,1.161,1.978
+R7 Specification Sensitivity,Duration >= 7 days (1 week),rice,2.269,6.379,0.356
+R7 Specification Sensitivity,Duration >= 7 days (1 week),whea,4.829,0.197,24.529
+R7 Specification Sensitivity,Duration >= 10 days,maiz,4.268,1.768,2.414
+R7 Specification Sensitivity,Duration >= 10 days,soyb,2.228,1.057,2.107
+R7 Specification Sensitivity,Duration >= 10 days,rice,1.785,6.158,0.29
+R7 Specification Sensitivity,Duration >= 10 days,whea,4.817,0.169,28.482
+R7 Specification Sensitivity,Duration >= 14 days (2 weeks),maiz,4.099,1.495,2.743
+R7 Specification Sensitivity,Duration >= 14 days (2 weeks),soyb,2.162,0.926,2.335
+R7 Specification Sensitivity,Duration >= 14 days (2 weeks),rice,1.326,5.762,0.23
+R7 Specification Sensitivity,Duration >= 14 days (2 weeks),whea,4.799,0.139,34.485
+R7 Specification Sensitivity,GS fraction > 1%,maiz,4.836,2.273,2.128
+R7 Specification Sensitivity,GS fraction > 1%,soyb,2.523,1.39,1.814
+R7 Specification Sensitivity,GS fraction > 1%,rice,3.565,6.625,0.538
+R7 Specification Sensitivity,GS fraction > 1%,whea,4.845,0.24,20.198
+R7 Specification Sensitivity,GS fraction > 3%,maiz,4.693,2.144,2.19
+R7 Specification Sensitivity,GS fraction > 3%,soyb,2.426,1.291,1.879
+R7 Specification Sensitivity,GS fraction > 3%,rice,2.963,6.545,0.453
+R7 Specification Sensitivity,GS fraction > 3%,whea,4.821,0.178,27.018
+R7 Specification Sensitivity,GS fraction > 5%,maiz,4.566,2.04,2.239
+R7 Specification Sensitivity,GS fraction > 5%,soyb,2.349,1.218,1.928
+R7 Specification Sensitivity,GS fraction > 5%,rice,2.448,6.439,0.38
+R7 Specification Sensitivity,GS fraction > 5%,whea,4.792,0.139,34.579
+R5 Shapley / Compound,ssp126,maiz,,,
+R5 Shapley / Compound,ssp126,maiz,,,
+R5 Shapley / Compound,ssp585,maiz,,,
+R5 Shapley / Compound,ssp585,maiz,,,
+R5 Shapley / Compound,ssp126,soyb,,,
+R5 Shapley / Compound,ssp126,soyb,,,
+R5 Shapley / Compound,ssp585,soyb,,,
+R5 Shapley / Compound,ssp585,soyb,,,
+R5 Shapley / Compound,ssp126,rice,,,
+R5 Shapley / Compound,ssp126,rice,,,
+R5 Shapley / Compound,ssp585,rice,,,
+R5 Shapley / Compound,ssp585,rice,,,
+R5 Shapley / Compound,ssp126,whea,,,
+R5 Shapley / Compound,ssp126,whea,,,
+R5 Shapley / Compound,ssp585,whea,,,
+R5 Shapley / Compound,ssp585,whea,,,

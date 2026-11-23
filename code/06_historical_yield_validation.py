@@ -12,12 +12,12 @@ from matplotlib.colors import TwoSlopeNorm
 
 
 # ========= User Config =========
-INPUT_CSV = Path(r"D:\AAUDE\paper_v2\paper4\validation_fao_yield\model_vs_fao_yield_country_year.csv")
-OUTPUT_DIR = Path(r"D:\AAUDE\paper\paper4\revision_v2\fig\manu_fig\validation_hist_4crops")
+INPUT_CSV = Path(r"./outputs/validation/fao_yield/model_vs_fao_yield_country_year.csv")
+OUTPUT_DIR = Path(r"./outputs/figures/validation_hist_4crops")
 
 # Keep all four crops in one common historical period.
 # Change to None to use full common period automatically.
-TARGET_YEAR_MIN = 1980
+TARGET_YEAR_MIN = 1990
 TARGET_YEAR_MAX = 2019
 
 MIN_COUNTRY_YEARS = 10

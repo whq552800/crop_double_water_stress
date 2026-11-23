@@ -14,14 +14,14 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 1) 路径配置
 # =========================
-nc_fp = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_cropmean_area_weighted_3scen_2haz.nc"
+nc_fp = r"./outputs/figures/loss_maps/loss_cropmean_area_weighted_3scen_2haz.nc"
 varname = "loss_pct_cropmean_areaW"
 
-faostat_fp = r"D:\Edge_download\FAOSTAT_data_en_3-8-2026.csv"
-income_fp  = r"D:\Edge_download\CLASS_2025_10_07.xlsx"
-shp_fp     = r"D:\AAUDE\paper_v2\paper2\data\ne_10m_admin_0_countries\ne_10m_admin_0_countries.shp"
+faostat_fp = r"./data/external/FAOSTAT_data_en_3-8-2026.csv"
+income_fp  = r"./data/external/CLASS_2025_10_07.xlsx"
+shp_fp     = r"./data/shapefiles/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp"
 
-out_dir = r"D:\AAUDE\paper_v2\paper4\outputs_country_trade_drought"
+out_dir = r"./outputs/outputs_country_trade_drought"
 os.makedirs(out_dir, exist_ok=True)
 
 # =========================
@@ -649,14 +649,14 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 1) 路径配置
 # =========================
-nc_fp = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_cropmean_area_weighted_3scen_2haz.nc"
+nc_fp = r"./outputs/figures/loss_maps/loss_cropmean_area_weighted_3scen_2haz.nc"
 varname = "loss_pct_cropmean_areaW"
 
-faostat_fp = r"D:\Edge_download\FAOSTAT_data_en_3-8-2026.csv"
-income_fp  = r"D:\Edge_download\CLASS_2025_10_07.xlsx"
-shp_fp     = r"D:\AAUDE\paper_v2\paper2\data\ne_10m_admin_0_countries\ne_10m_admin_0_countries.shp"
+faostat_fp = r"./data/external/FAOSTAT_data_en_3-8-2026.csv"
+income_fp  = r"./data/external/CLASS_2025_10_07.xlsx"
+shp_fp     = r"./data/shapefiles/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp"
 
-out_dir = r"D:\AAUDE\paper_v2\paper4\outputs_country_trade_drought_fix"
+out_dir = r"./outputs/outputs_country_trade_drought_fix"
 os.makedirs(out_dir, exist_ok=True)
 
 # =========================
@@ -1351,14 +1351,14 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 1) 路径配置
 # =========================
-nc_fp = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_cropmean_area_weighted_3scen_2haz.nc"
+nc_fp = r"./outputs/figures/loss_maps/loss_cropmean_area_weighted_3scen_2haz.nc"
 varname = "loss_pct_cropmean_areaW"
 
-faostat_fp = r"D:\Edge_download\FAOSTAT_data_en_3-8-2026.csv"
-income_fp  = r"D:\Edge_download\CLASS_2025_10_07.xlsx"
-shp_fp     = r"D:\AAUDE\paper_v2\paper2\data\ne_10m_admin_0_countries\ne_10m_admin_0_countries.shp"
+faostat_fp = r"./data/external/FAOSTAT_data_en_3-8-2026.csv"
+income_fp  = r"./data/external/CLASS_2025_10_07.xlsx"
+shp_fp     = r"./data/shapefiles/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp"
 
-out_dir = r"D:\AAUDE\paper_v2\paper4\outputs_country_trade_2scen_2haz"
+out_dir = r"./outputs/outputs_country_trade_2scen_2haz"
 os.makedirs(out_dir, exist_ok=True)
 
 # =========================
@@ -2071,7 +2071,7 @@ gcms = [
 ]
 
 # 输出目录
-out_dir = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss"
+out_dir = r"./outputs/outputs_country_prod_loss"
 os.makedirs(out_dir, exist_ok=True)
 
 # 输出 nc
@@ -2486,12 +2486,12 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 0) 输入文件（未来by_gcm + 历史）
 # =========================
-fut_by_gcm_nc = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_future_2070_2100_by_gcm.nc"
-hist_nc       = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_hist_1980_2019.nc"
+fut_by_gcm_nc = r"./outputs/figures/loss_maps/loss_future_2070_2100_by_gcm.nc"
+hist_nc       = r"./outputs/figures/loss_maps/loss_hist_1980_2019.nc"
 
 # 输出
-out_csv = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\varDecomp_SSP_vs_GCM_4crops_2haz.csv"
-out_pdf = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\Fig_varDecomp_SSP_vs_GCM_4crops_2haz.pdf"
+out_csv = r"./outputs/figures/loss_maps/varDecomp_SSP_vs_GCM_4crops_2haz.csv"
+out_pdf = r"./outputs/figures/loss_maps/Fig_varDecomp_SSP_vs_GCM_4crops_2haz.pdf"
 
 # =========================
 # 1) 维度/标签
@@ -2713,8 +2713,8 @@ import os
 # =========================
 # 1 读取刚生成的 nc
 # =========================
-prod_cf_nc = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\prod_cf_4crop_3scen.nc"
-prod_loss_abs_nc = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\prod_loss_abs_4crop_3scen_2haz.nc"
+prod_cf_nc = r"./outputs/outputs_country_prod_loss/prod_cf_4crop_3scen.nc"
+prod_loss_abs_nc = r"./outputs/outputs_country_prod_loss/prod_loss_abs_4crop_3scen_2haz.nc"
 
 prod_cf = xr.open_dataset(prod_cf_nc)["prod_cf"]
 prod_loss_abs = xr.open_dataset(prod_loss_abs_nc)["prod_loss_abs"]
@@ -2729,7 +2729,7 @@ hazards = ["dry","wet"]
 # =========================
 # 2 读取国家 shp
 # =========================
-shp_fp = r"D:\AAUDE\paper_v2\paper2\data\ne_10m_admin_0_countries\ne_10m_admin_0_countries.shp"
+shp_fp = r"./data/shapefiles/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp"
 
 gdf = gpd.read_file(shp_fp).to_crs(epsg=4326)
 
@@ -2803,7 +2803,7 @@ df_country = pd.DataFrame(rows)
 # =========================
 # 5 导出
 # =========================
-out_csv = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\country_prod_loss.csv"
+out_csv = r"./outputs/outputs_country_prod_loss/country_prod_loss.csv"
 
 df_country.to_csv(out_csv,index=False)
 
@@ -2818,12 +2818,12 @@ import country_converter as coco
 # ===============================
 # 文件路径
 # ===============================
-trade_fp   = r"D:\Edge_download\FAOSTAT_data_en_3-8-2026.csv"
-prod_fp    = r"D:\Edge_download\FAOSTAT_data_en_3-8-2026 (1).csv"
-income_fp  = r"D:\Edge_download\CLASS_2025_10_07.xlsx"
-climate_fp = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\country_prod_loss.csv"
+trade_fp   = r"./data/external/FAOSTAT_data_en_3-8-2026.csv"
+prod_fp    = r"./data/external/FAOSTAT_data_en_3-8-2026 (1).csv"
+income_fp  = r"./data/external/CLASS_2025_10_07.xlsx"
+climate_fp = r"./outputs/outputs_country_prod_loss/country_prod_loss.csv"
 
-out_csv = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\country_food_risk_table.csv"
+out_csv = r"./outputs/outputs_country_prod_loss/country_food_risk_table.csv"
 
 YEAR_MIN = 2014
 YEAR_MAX = 2023
@@ -3240,10 +3240,10 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 1) 文件路径
 # =========================
-csv_fp = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\country_food_risk_table.csv"
-shp_fp = r"D:\AAUDE\paper_v2\paper2\data\ne_10m_admin_0_countries\ne_10m_admin_0_countries.shp"
+csv_fp = r"./outputs/outputs_country_prod_loss/country_food_risk_table.csv"
+shp_fp = r"./data/shapefiles/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp"
 
-out_dir = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\figures"
+out_dir = r"./outputs/outputs_country_prod_loss/figures"
 os.makedirs(out_dir, exist_ok=True)
 
 out_pdf = os.path.join(out_dir, "Fig_country_loss_pct_2x2.pdf")
@@ -3371,8 +3371,8 @@ mpl.rcParams["font.family"]  = "serif"
 mpl.rcParams["font.serif"]   = ["Arial"]
 mpl.rcParams["axes.unicode_minus"] = False
 
-csv_fp = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\country_food_risk_table.csv"
-out_dir = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\figures"
+csv_fp = r"./outputs/outputs_country_prod_loss/country_food_risk_table.csv"
+out_dir = r"./outputs/outputs_country_prod_loss/figures"
 os.makedirs(out_dir, exist_ok=True)
 
 out_pdf = os.path.join(out_dir, "Fig_import_dependence_vs_loss_scatter.pdf")
@@ -3436,8 +3436,8 @@ mpl.rcParams["font.family"]  = "serif"
 mpl.rcParams["font.serif"]   = ["Arial"]
 mpl.rcParams["axes.unicode_minus"] = False
 
-csv_fp = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\country_food_risk_table.csv"
-out_dir = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\figures"
+csv_fp = r"./outputs/outputs_country_prod_loss/country_food_risk_table.csv"
+out_dir = r"./outputs/outputs_country_prod_loss/figures"
 os.makedirs(out_dir, exist_ok=True)
 
 out_pdf = os.path.join(out_dir, "Fig_income_trade_role_bar.pdf")
@@ -3548,11 +3548,11 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 1) 文件路径
 # =========================
-csv_fp = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\country_food_risk_table.csv"
-country_shp_fp = r"D:\AAUDE\paper_v2\paper2\data\ne_10m_admin_0_countries\ne_10m_admin_0_countries.shp"
-ipcc_shp_fp = r"F:\世界区划\IPCC-WGI-reference-regions-v4_shapefile\IPCC-WGI-reference-regions-v4.shp"
+csv_fp = r"./outputs/outputs_country_prod_loss/country_food_risk_table.csv"
+country_shp_fp = r"./data/shapefiles/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp"
+ipcc_shp_fp = r"./data/shapefiles/IPCC-WGI-reference-regions-v4/IPCC-WGI-reference-regions-v4.shp"
 
-out_dir = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\figures_circular_clean"
+out_dir = r"./outputs/outputs_country_prod_loss/figures_circular_clean"
 os.makedirs(out_dir, exist_ok=True)
 
 out_pdf = os.path.join(out_dir, "Fig_circular_major_producers_ssp585_dry_wet_clean.pdf")
@@ -3903,15 +3903,15 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 1) 文件路径
 # =========================
-csv_fp = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\country_food_risk_table.csv"
+csv_fp = r"./outputs/outputs_country_prod_loss/country_food_risk_table.csv"
 
 # 国家边界 shp（Natural Earth）
-country_shp = r"D:\AAUDE\paper_v2\paper2\data\ne_10m_admin_0_countries\ne_10m_admin_0_countries.shp"
+country_shp = r"./data/shapefiles/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp"
 
 # 七大洲 shp
-continent_shp = r"F:\世界区划\七大洲\continent.shp"
+continent_shp = r"./data/shapefiles/continents/continent.shp"
 
-out_dir = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\figures_bar_major_region_sorted_countryname"
+out_dir = r"./outputs/outputs_country_prod_loss/figures_bar_major_region_sorted_countryname"
 os.makedirs(out_dir, exist_ok=True)
 
 out_pdf = os.path.join(out_dir, "Fig_major_producers_bar_ssp585_dry_wet_continent_sorted_countryname.pdf")
@@ -4289,8 +4289,8 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 1) 路径
 # =========================
-fp = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\country_food_risk_table.csv"
-out_dir = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\figures_final_income_prodsize_nature"
+fp = r"./outputs/outputs_country_prod_loss/country_food_risk_table.csv"
+out_dir = r"./outputs/outputs_country_prod_loss/figures_final_income_prodsize_nature"
 os.makedirs(out_dir, exist_ok=True)
 
 # =========================
@@ -4711,8 +4711,8 @@ import pandas as pd
 # =========================
 # 1) 路径
 # =========================
-fp = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\country_food_risk_table.csv"
-out_dir = r"D:\AAUDE\paper_v2\paper4\outputs_country_prod_loss\quadrant_stats_ssp585_dry"
+fp = r"./outputs/outputs_country_prod_loss/country_food_risk_table.csv"
+out_dir = r"./outputs/outputs_country_prod_loss/quadrant_stats_ssp585_dry"
 os.makedirs(out_dir, exist_ok=True)
 
 # =========================

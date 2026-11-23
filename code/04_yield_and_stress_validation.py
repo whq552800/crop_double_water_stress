@@ -59,9 +59,9 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 1) 路径
 # =========================
-shp_fp = r"D:\AAUDE\paper_v2\paper2\data\ne_10m_admin_0_countries\ne_10m_admin_0_countries.shp"
-fao_fp = r"D:\Edge_download\FAOSTAT_data_en_3-9-2026.csv"
-out_dir = r"D:\AAUDE\paper_v2\paper4\validation_fao_yield"
+shp_fp = r"./data/shapefiles/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp"
+fao_fp = r"./data/external/FAOSTAT_data_en_3-9-2026.csv"
+out_dir = r"./outputs/validation/fao_yield"
 os.makedirs(out_dir, exist_ok=True)
 
 # =========================
@@ -496,7 +496,7 @@ mpl.rcParams["font.family"]  = "serif"
 mpl.rcParams["font.serif"]   = ["Arial"]
 mpl.rcParams["axes.unicode_minus"] = False
 
-out_dir = r"D:\AAUDE\paper_v2\paper4\validation_fao_yield"
+out_dir = r"./outputs/validation/fao_yield"
 os.makedirs(out_dir, exist_ok=True)
 
 # merged 需要包含：
@@ -670,8 +670,8 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 1) 路径
 # =========================
-in_csv  = r"D:\AAUDE\paper_v2\paper4\validation_fao_yield\model_vs_fao_yield_country_year.csv"
-out_dir = r"D:\AAUDE\paper_v2\paper4\validation_fao_yield\fig_country_r_2x2_log"
+in_csv  = r"./outputs/validation/fao_yield/model_vs_fao_yield_country_year.csv"
+out_dir = r"./outputs/validation/fao_yield/fig_country_r_2x2_log"
 os.makedirs(out_dir, exist_ok=True)
 
 # =========================
@@ -926,9 +926,9 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 1) 路径
 # =========================
-yield_compare_fp = r"D:\AAUDE\paper_v2\paper4\validation_fao_yield\model_vs_fao_yield_country_year.csv"
-prod_fp          = r"D:\Edge_download\FAOSTAT_data_en_3-8-2026 (1).csv"
-out_dir          = r"D:\AAUDE\paper_v2\paper4\validation_fao_yield\top5_producers_timeseries"
+yield_compare_fp = r"./outputs/validation/fao_yield/model_vs_fao_yield_country_year.csv"
+prod_fp          = r"./data/external/FAOSTAT_data_en_3-8-2026 (1).csv"
+out_dir          = r"./outputs/validation/fao_yield/top5_producers_timeseries"
 os.makedirs(out_dir, exist_ok=True)
 
 # =========================
@@ -1212,9 +1212,9 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 1) 路径
 # =========================
-yield_compare_fp = r"D:\AAUDE\paper_v2\paper4\validation_fao_yield\model_vs_fao_yield_country_year.csv"
-prod_fp          = r"D:\Edge_download\FAOSTAT_data_en_3-8-2026 (1).csv"
-out_dir          = r"D:\AAUDE\paper_v2\paper4\validation_fao_yield\top5_producers_anomaly_timeseries"
+yield_compare_fp = r"./outputs/validation/fao_yield/model_vs_fao_yield_country_year.csv"
+prod_fp          = r"./data/external/FAOSTAT_data_en_3-8-2026 (1).csv"
+out_dir          = r"./outputs/validation/fao_yield/top5_producers_anomaly_timeseries"
 os.makedirs(out_dir, exist_ok=True)
 
 # =========================
@@ -1496,9 +1496,9 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 1) 路径
 # =========================
-yield_compare_fp = r"D:\AAUDE\paper_v2\paper4\validation_fao_yield\model_vs_fao_yield_country_year.csv"
-prod_fp          = r"D:\Edge_download\FAOSTAT_data_en_3-8-2026 (1).csv"
-out_dir          = r"D:\AAUDE\paper_v2\paper4\validation_fao_yield\top5_producers_anomaly_timeseries_1980_2019"
+yield_compare_fp = r"./outputs/validation/fao_yield/model_vs_fao_yield_country_year.csv"
+prod_fp          = r"./data/external/FAOSTAT_data_en_3-8-2026 (1).csv"
+out_dir          = r"./outputs/validation/fao_yield/top5_producers_anomaly_timeseries_1980_2019"
 os.makedirs(out_dir, exist_ok=True)
 
 # =========================
@@ -1520,7 +1520,7 @@ FAO_ITEM_MAP = {
 }
 
 MIN_N_YEAR  = 8
-VALID_START = 1980
+VALID_START = 1990
 VALID_END   = 2019
 
 # =========================
@@ -1794,8 +1794,8 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 1) 路径
 # =========================
-gaez_fp = r"F:\worldpop\mze_2000_prd.tif"
-out_dir = r"D:\AAUDE\paper_v2\paper4\gaez_compare_2000"
+gaez_fp = r"./data/gaez_v4_200b_noco2/reference/mze_2000_prd.tif"
+out_dir = r"./outputs/gaez_compare_2000"
 os.makedirs(out_dir, exist_ok=True)
 
 # =========================
@@ -1984,10 +1984,10 @@ mpl.rcParams["axes.unicode_minus"] = False
 # 1) 路径
 # =========================
 gaez_files = {
-    "maiz": r"F:\worldpop\mze_2000_prd.tif",
-    "soyb": r"F:\worldpop\soy_2000_prd.tif",
-    "whea": r"F:\worldpop\whe_2000_prd.tif",
-    "rice": r"F:\worldpop\rcw_2000_prd.tif",
+    "maiz": r"./data/gaez_v4_200b_noco2/reference/mze_2000_prd.tif",
+    "soyb": r"./data/gaez_v4_200b_noco2/reference/soy_2000_prd.tif",
+    "whea": r"./data/gaez_v4_200b_noco2/reference/whe_2000_prd.tif",
+    "rice": r"./data/gaez_v4_200b_noco2/reference/rcw_2000_prd.tif",
 }
 
 crop_title = {
@@ -1997,7 +1997,7 @@ crop_title = {
     "rice": "Rice",
 }
 
-out_dir = r"D:\AAUDE\paper_v2\paper4\gaez_production_compare_2000_nointerp"
+out_dir = r"./outputs/gaez_production_compare_2000_nointerp"
 os.makedirs(out_dir, exist_ok=True)
 
 # =========================
@@ -2476,7 +2476,7 @@ def plot_stress_days_2x2_anchored(
 # ==========================================================
 # 4) 运行示例
 # ==========================================================
-out_fp = r"D:\AAUDE\paper\paper4\revision_v2\fig\manu_fig\stress_days_2x2_anchored_hist2019_fut2020.pdf"
+out_fp = r"./outputs/figures/stress_days_2x2_anchored_hist2019_fut2020.pdf"
 
 plot_stress_days_2x2_anchored(
     DB=DB,

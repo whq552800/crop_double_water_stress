@@ -1,0 +1,12 @@
+Category,Dataset / Model,Analysis Period,Spatial & Temporal Resolution,Scenarios / Variant
+Historical forcing,GSWP3–W5E5 (ISIMIP3a),1990–2019 analysis (1975–2019 archive),"0.5° × 0.5°, daily",Observation-constrained baseline reanalysis
+CMIP6 GCM 1,CanESM5,2020–2100 (eval. 2070–2100),"0.5° × 0.5°, daily (ISIMIP3BASD)","SSP1–2.6 & SSP5–8.5 (r1i1p1f1, 5-yr spin-up)"
+CMIP6 GCM 2,CNRM-CM6-1,2020–2100 (eval. 2070–2100),"0.5° × 0.5°, daily (ISIMIP3BASD)","SSP1–2.6 & SSP5–8.5 (r1i1p1f2, 5-yr spin-up)"
+CMIP6 GCM 3,CNRM-ESM2-1,2020–2100 (eval. 2070–2100),"0.5° × 0.5°, daily (ISIMIP3BASD)","SSP1–2.6 & SSP5–8.5 (r1i1p1f2, 5-yr spin-up)"
+CMIP6 GCM 4,EC-Earth3,2020–2100 (eval. 2070–2100),"0.5° × 0.5°, daily (ISIMIP3BASD)","SSP1–2.6 & SSP5–8.5 (r1i1p1f1, 5-yr spin-up)"
+CMIP6 GCM 5,GFDL-ESM4,2020–2100 (eval. 2070–2100),"0.5° × 0.5°, daily (ISIMIP3BASD)","SSP1–2.6 & SSP5–8.5 (r1i1p1f1, 5-yr spin-up)"
+CMIP6 GCM 6,IPSL-CM6A-LR,2020–2100 (eval. 2070–2100),"0.5° × 0.5°, daily (ISIMIP3BASD)","SSP1–2.6 & SSP5–8.5 (r1i1p1f1, 5-yr spin-up)"
+CMIP6 GCM 7,MIROC6,2020–2100 (eval. 2070–2100),"0.5° × 0.5°, daily (ISIMIP3BASD)","SSP1–2.6 & SSP5–8.5 (r1i1p1f1, 5-yr spin-up)"
+CMIP6 GCM 8,MPI-ESM1-2-HR,2020–2100 (eval. 2070–2100),"0.5° × 0.5°, daily (ISIMIP3BASD)","SSP1–2.6 & SSP5–8.5 (r1i1p1f1, 5-yr spin-up)"
+CMIP6 GCM 9,MRI-ESM2-0,2020–2100 (eval. 2070–2100),"0.5° × 0.5°, daily (ISIMIP3BASD)","SSP1–2.6 & SSP5–8.5 (r1i1p1f1, 5-yr spin-up)"
+CMIP6 GCM 10,UKESM1-0-LL,2020–2100 (eval. 2070–2100),"0.5° × 0.5°, daily (ISIMIP3BASD)","SSP1–2.6 & SSP5–8.5 (r1i1p1f2, 5-yr spin-up)"

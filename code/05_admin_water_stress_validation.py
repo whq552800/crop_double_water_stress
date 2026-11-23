@@ -16,11 +16,11 @@ import xarray as xr
 from matplotlib.colors import TwoSlopeNorm
 
 DEFAULT_ADMIN_SHP = Path(
-    r"D:\AAUDE\cil-ag-replication-package\Fig1\Crop_Coverage\data\shapes\all_countries.shp"
+    r"./data/shapefiles/all_countries.shp"
 )
-DEFAULT_OBS_DIR = Path(r"F:\crop_filed\impact_data\for_regressions_full_csv")
+DEFAULT_OBS_DIR = Path(r"./data/validation/cil_adm1_1990_2015")
 DEFAULT_OUT_DIR = Path(
-    r"D:\AAUDE\paper\paper4\revision_v2\fig\manu_fig\validation_hist_dry_wet_scatter"
+    r"./outputs/figures/validation_hist_dry_wet_scatter"
 )
 DEFAULT_YEAR_MIN = 1900
 DEFAULT_YEAR_MAX = 2019

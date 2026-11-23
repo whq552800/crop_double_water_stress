@@ -1,0 +1,11 @@
+Dataset & Citation,Resolution & Coverage,Role in Framework,Time Window / Scenario Protocol
+GSWP3–W5E5 (ISIMIP3a),0.5° daily global climate forcing,"Drives historical hydrology, FAO-56 ET0 & SPEI_60",1990–2019 baseline (after 1975–1989 spin-up)
+CMIP6 10 GCMs (ISIMIP3BASD),0.5° daily bias-adjusted to W5E5,Drives future projections under SSP1–2.6 & SSP5–8.5,2020–2100 (evaluated 2070–2100; 2015–2019 spin-up)
+GGCMI Phase 3 calendars & models,0.5° crop calendars + 11 crop models,Planting–maturity dates; 11-model wet-extreme benchmark,Dynamic calendars; 1990–2016 ISIMIP3a benchmark
+"FAO-56, GAEZ v4 & Keating et al.",4 FAO growth stages & crop parameters,"Proportional stage durations, Kc, Ky, and root depth",Fixed proportional stage rules across periods (Table S2)
+SPAM 2020 + GAEZ v4 reference yield,5'->0.5° areas; 0.5° attainable yields,Production weights; CO2-inactive setup with FAO-56 ET0,Static reference weights isolating hydroclimatic signal
+CIL Subnational + FAOSTAT + GDHY,"ADM1 (48 nations), national, & 0.5°",Multi-scale yield-loss error & bias structure validation,CIL: 1990–2015; FAOSTAT: 1990–2019; GDHY: 1990–2016
+USDA NASS & USDA RMA,0.5° US maize yields & cause-of-loss,Cause-specific drought vs. excess-moisture attribution test,"NASS: 1990–2016 (1,295 grids); RMA: 1990–2015 (1,179 grids)"
+"EM-DAT/GDIS, MODIS GFD & 18 events","ADM polygons, 250-m->0.5° floods, cases",Disaster-footprint & landmark event detection tests,GDIS: 1990–2016; MODIS GFD: 2000–2016; 18 cases: 1990–2019
+ERA5 & ISMN soil moisture,0.5° global reanalysis & in-situ stations,Root-zone available soil moisture (ASM) validation,ERA5: 1990–2019; ISMN: post-1990 station overlap
+FAOSTAT trade & World Bank income,161 countries bilateral staple trade,National Import Dependency Ratio (IDR > 0.4; Eq. 13),Contemporary 2014–2023 mean (r = 0.982 stability)

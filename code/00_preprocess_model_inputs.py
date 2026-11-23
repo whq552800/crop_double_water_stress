@@ -2,7 +2,7 @@
 # Paths remain project-specific and may need to be edited before rerunning.
 # Part 0: preprocessing of model inputs, detrending, growing-season files, and NetCDF preparation.
 
-# Extracted from D:\AAUDE\paper\paper4\revision_v2\code\data_porcessing.ipynb
+# Extracted from ./code/data_porcessing.ipynb
 # Generated for read-only public-release audit. Review before reuse.
 
 # %% [markdown]
@@ -42,17 +42,17 @@ kcc = {
 }
 
 kc = xr.open_dataset(
-    rf"F:\paper4\GWSP3_W5E5_v3\currentKY_daily_{crop}.nc",
+    rf"./data/cwatm_outputs/GSWP3-W5E5/currentKY_daily_{crop}.nc",
     chunks=chunks,
 ).currentKY[5*365+1:]
 
 w = xr.open_dataset(
-    r"F:\paper4\GWSP3_W5E5_v3\w_daily.nc",
+    r"./data/cwatm_outputs/GSWP3-W5E5/w_daily.nc",
     chunks=chunks,
 ).w[5*365+1:]
 
 spei = xr.open_dataset(
-    r"E:\dsf\SPEI_daily1.nc",
+    r"./data/spei/SPEI_daily1.nc",
     engine="h5netcdf",
     chunks=chunks,
 ).spei.transpose("time", "lat", "lon")
@@ -84,17 +84,17 @@ kcc = {
 }
 
 kc = xr.open_dataset(
-    rf"F:\paper4\GWSP3_W5E5_v3\currentKY_daily_{crop}.nc",
+    rf"./data/cwatm_outputs/GSWP3-W5E5/currentKY_daily_{crop}.nc",
     chunks=chunks,
 ).currentKY[5*365+1:]
 
 w = xr.open_dataset(
-    r"F:\paper4\GWSP3_W5E5_v3\w_daily.nc",
+    r"./data/cwatm_outputs/GSWP3-W5E5/w_daily.nc",
     chunks=chunks,
 ).w[5*365+1:]
 
 spei = xr.open_dataset(
-    r"E:\dsf\SPEI_daily1.nc",
+    r"./data/spei/SPEI_daily1.nc",
     engine="h5netcdf",
     chunks=chunks,
 ).spei.transpose("time", "lat", "lon")
@@ -103,7 +103,7 @@ seasons = ["yield_1", "yield_2", "yield_3", "yield_4"]
 
 for arr in ['nonIrr','Irr']:
     yield_loss = xr.open_dataset(
-        rf"F:\paper4\GWSP3_W5E5_v3\ratio_et_{arr}_daily_{crop}.nc",
+        rf"./data/cwatm_outputs/GSWP3-W5E5/ratio_et_{arr}_daily_{crop}.nc",
         chunks=chunks,
     )[f'ratio_et_{arr}'][5*365+1:]
 
@@ -131,7 +131,7 @@ for arr in ['nonIrr','Irr']:
             {"normal": nor, "flood": flood, "drought": drought}
         )
     
-        out_path = rf"E:\paper4\classification\{season}_{crop}_{arr}.nc"
+        out_path = rf"./outputs/classification/{season}_{crop}_{arr}.nc"
     
         # 如果之前有同名文件，先删掉（防止半成品）
         if os.path.exists(out_path):
@@ -202,8 +202,8 @@ seasons = ["yield_1", "yield_2", "yield_3", "yield_4"]
 chunks = {"time": -1, "lat": 60, "lon": 120}
 
 # 根目录
-fp = r"F:\paper4\cwatm_crop_yield"
-orig_root = r"F:\paper4\cwatm_crop_yield_original"
+fp = r"./data/cwatm_outputs"
+orig_root = r"./data/cwatm_outputs_raw"
 
 # =========================
 # 2) 主循环：合并 4 个 season => 每个 crop+arr 只写 1 个文件
@@ -333,7 +333,7 @@ seasons = ["yield_1", "yield_2", "yield_3", "yield_4"]
 
 chunks = {"time": -1, "lat": 60, "lon": 90}
 
-fp = r"F:\paper4\cwatm_crop_yield"
+fp = r"./data/cwatm_outputs"
 open_kwargs = dict(chunks=chunks, engine="h5netcdf", cache=False)
 for gcm in tqdm(os.listdir(fp)[8:], desc="GCM", position=0):
     if gcm=='MRI-ESM2-0':
@@ -344,19 +344,19 @@ for gcm in tqdm(os.listdir(fp)[8:], desc="GCM", position=0):
         # ssp='ssp585'
         # w / spei 只依赖 gcm/ssp
         w = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\w_daily.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/w_daily.nc",
             **open_kwargs
         ).w[-11322:].transpose("time", "lat", "lon")
 
         spei = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\spei_daily.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/spei_daily.nc",
             **open_kwargs
         ).spei.transpose("time", "lat", "lon")[-11322:]
 
         for crop, kcc in tqdm(KCC.items(), desc=f"{gcm}-{ssp} crop", position=2, leave=False):
 
             kc = xr.open_dataset(
-                rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\currentKY_daily_{crop}.nc",
+                rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/currentKY_daily_{crop}.nc",
                 **open_kwargs
             ).currentKY[-11322:].transpose("time", "lat", "lon")
 
@@ -370,7 +370,7 @@ for gcm in tqdm(os.listdir(fp)[8:], desc="GCM", position=0):
             for arr in ["nonIrr", "Irr"]:
                 # arr="Irr"
                 ds_y = xr.open_dataset(
-                    rf"F:\paper4\cwatm_crop_yield\{gcm}\{ssp}\ratio_{crop}_{arr}.nc",
+                    rf"./data/cwatm_outputs/{gcm}/{ssp}/ratio_{crop}_{arr}.nc",
                     **open_kwargs
                 )
 
@@ -396,7 +396,7 @@ for gcm in tqdm(os.listdir(fp)[8:], desc="GCM", position=0):
                         {"normal": nor, "flood": flood, "drought": drought}
                     )
 
-                    out_dir = rf"F:\paper4\cwatm_crop_yield\{gcm}\{ssp}"
+                    out_dir = rf"./data/cwatm_outputs/{gcm}/{ssp}"
                     os.makedirs(out_dir, exist_ok=True)
                     out_path = join(out_dir, f"{season}_{crop}_{arr}.nc")
 
@@ -433,24 +433,24 @@ seasons = ["yield_1", "yield_2", "yield_3", "yield_4"]
 
 chunks = {"time": -1, "lat": 60, "lon": 90}
 
-fp = r"F:\paper4\cwatm_crop_yield"
+fp = r"./data/cwatm_outputs"
 open_kwargs = dict(chunks=chunks, engine="h5netcdf", cache=False)
 for gcm in tqdm(os.listdir(fp)[5:], desc="GCM", position=0):
     ssp='ssp126'
     w = xr.open_dataset(
-        rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\w_daily.nc",
+        rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/w_daily.nc",
         **open_kwargs
     ).w[-11322:].transpose("time", "lat", "lon")
 
     spei = xr.open_dataset(
-        rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\spei_daily.nc",
+        rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/spei_daily.nc",
         **open_kwargs
     ).spei.transpose("time", "lat", "lon")[-11322:]
 
     for crop, kcc in tqdm(KCC.items(), desc=f"{gcm}-{ssp} crop", position=1, leave=False):
 
         kc = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\currentKY_daily_{crop}.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/currentKY_daily_{crop}.nc",
             **open_kwargs
         ).currentKY[-11322:].transpose("time", "lat", "lon")
 
@@ -466,7 +466,7 @@ for gcm in tqdm(os.listdir(fp)[5:], desc="GCM", position=0):
             ):
             # arr="Irr"
             ds_y = xr.open_dataset(
-                rf"F:\paper4\cwatm_crop_yield\{gcm}\{ssp}\ratio_{crop}_{arr}.nc",
+                rf"./data/cwatm_outputs/{gcm}/{ssp}/ratio_{crop}_{arr}.nc",
                 **open_kwargs
             )
 
@@ -492,7 +492,7 @@ for gcm in tqdm(os.listdir(fp)[5:], desc="GCM", position=0):
                     {"normal": nor, "flood": flood, "drought": drought}
                 )
 
-                out_dir = rf"F:\paper4\cwatm_crop_yield\{gcm}\{ssp}"
+                out_dir = rf"./data/cwatm_outputs/{gcm}/{ssp}"
                 os.makedirs(out_dir, exist_ok=True)
                 out_path = join(out_dir, f"{season}_{crop}_{arr}.nc")
 
@@ -529,7 +529,7 @@ seasons = ["yield_1", "yield_2", "yield_3", "yield_4"]
 
 chunks = {"time": -1, "lat": 60, "lon": 60}
 
-fp = r"F:\paper4\cwatm_crop_yield"
+fp = r"./data/cwatm_outputs"
 open_kwargs = dict(chunks=chunks, engine="h5netcdf", cache=False)
 
 gcm=os.listdir(fp)[-1]
@@ -538,19 +538,19 @@ ssp="ssp585"
     # ssp='ssp585'
     # w / spei 只依赖 gcm/ssp
 w = xr.open_dataset(
-    rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\w_daily.nc",
+    rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/w_daily.nc",
     **open_kwargs
 ).w[-11322:].transpose("time", "lat", "lon")
 
 spei = xr.open_dataset(
-    rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\spei_daily.nc",
+    rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/spei_daily.nc",
     **open_kwargs
 ).spei.transpose("time", "lat", "lon")[-11322:]
 
 for crop, kcc in tqdm(KCC.items(), desc=f"{gcm}-{ssp} crop", position=0, leave=False):
 
     kc = xr.open_dataset(
-        rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\currentKY_daily_{crop}.nc",
+        rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/currentKY_daily_{crop}.nc",
         **open_kwargs
     ).currentKY[-11322:].transpose("time", "lat", "lon")
 
@@ -564,7 +564,7 @@ for crop, kcc in tqdm(KCC.items(), desc=f"{gcm}-{ssp} crop", position=0, leave=F
     for arr in ["nonIrr", "Irr"]:
         # arr="Irr"
         ds_y = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield\{gcm}\{ssp}\ratio_{crop}_{arr}.nc",
+            rf"./data/cwatm_outputs/{gcm}/{ssp}/ratio_{crop}_{arr}.nc",
             **open_kwargs
         )
     
@@ -590,7 +590,7 @@ for crop, kcc in tqdm(KCC.items(), desc=f"{gcm}-{ssp} crop", position=0, leave=F
                 {"normal": nor, "flood": flood, "drought": drought}
             )
     
-            out_dir = rf"F:\paper4\cwatm_crop_yield\{gcm}\{ssp}"
+            out_dir = rf"./data/cwatm_outputs/{gcm}/{ssp}"
             os.makedirs(out_dir, exist_ok=True)
             out_path = join(out_dir, f"{season}_{crop}_{arr}.nc")
     
@@ -628,23 +628,23 @@ kcc = {
 chunks = {"time": 1000, "lat": 40, "lon": 40}
 seasons = ["yield_1", "yield_2", "yield_3", "yield_4"]
 
-fp = r'F:\paper4\cwatm_crop_yield'
+fp = r'./data/cwatm_outputs'
 
 for gcm in os.listdir(fp):
     for ssp in ['ssp126','ssp585']:
 
         kc = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\currentKY_daily_{crop}.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/currentKY_daily_{crop}.nc",
             chunks=chunks,
         ).currentKY[-11322:]
 
         w = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\w_daily.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/w_daily.nc",
             chunks=chunks,
         ).w[-11322:]
 
         spei = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\spei_daily.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/spei_daily.nc",
             engine="h5netcdf",
             chunks=chunks,
         ).spei.transpose("time", "lat", "lon")[-11322:]
@@ -652,7 +652,7 @@ for gcm in os.listdir(fp):
 
             # ✅ 读取 original + smooth，并拼成 version 维度
             ds_y = xr.open_dataset(
-                rf"F:\paper4\cwatm_crop_yield\{gcm}\{ssp}\ratio_{crop}_{arr}.nc",
+                rf"./data/cwatm_outputs/{gcm}/{ssp}/ratio_{crop}_{arr}.nc",
                 chunks=chunks,
             )
 
@@ -685,7 +685,7 @@ for gcm in os.listdir(fp):
 
                 ds_out = xr.Dataset({"normal": nor, "flood": flood, "drought": drought})
 
-                out_dir = rf"F:\paper4\cwatm_crop_yield\{gcm}\{ssp}"
+                out_dir = rf"./data/cwatm_outputs/{gcm}/{ssp}"
                 os.makedirs(out_dir, exist_ok=True)
                 out_path = join(out_dir, f"{season}_{crop}_{arr}.nc")
 
@@ -722,23 +722,23 @@ kcc = {
 chunks = {"time": -1, "lat": 40, "lon": 40}
 seasons = ["yield_1", "yield_2", "yield_3", "yield_4"]
 
-fp = r'F:\paper4\cwatm_crop_yield'
+fp = r'./data/cwatm_outputs'
 
 for gcm in os.listdir(fp):
     for ssp in ['ssp126','ssp585']:
 
         kc = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\currentKY_daily_{crop}.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/currentKY_daily_{crop}.nc",
             chunks=chunks,
         ).currentKY[-11322:]
 
         w = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\w_daily.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/w_daily.nc",
             chunks=chunks,
         ).w[-11322:]
 
         spei = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\spei_daily.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/spei_daily.nc",
             engine="h5netcdf",
             chunks=chunks,
         ).spei.transpose("time", "lat", "lon")[-11322:]
@@ -748,7 +748,7 @@ for gcm in os.listdir(fp):
 
             # ✅ 读取 original + smooth，并拼成 version 维度
             ds_y = xr.open_dataset(
-                rf"F:\paper4\cwatm_crop_yield\{gcm}\{ssp}\ratio_{crop}_{arr}.nc",
+                rf"./data/cwatm_outputs/{gcm}/{ssp}/ratio_{crop}_{arr}.nc",
                 chunks=chunks,
             )
 
@@ -781,7 +781,7 @@ for gcm in os.listdir(fp):
 
                 ds_out = xr.Dataset({"normal": nor, "flood": flood, "drought": drought})
 
-                out_dir = rf"F:\paper4\cwatm_crop_yield\{gcm}\{ssp}"
+                out_dir = rf"./data/cwatm_outputs/{gcm}/{ssp}"
                 os.makedirs(out_dir, exist_ok=True)
                 out_path = join(out_dir, f"{season}_{crop}_{arr}.nc")
 
@@ -818,23 +818,23 @@ kcc = {
 chunks = {"time": -1, "lat": 40, "lon": 40}
 seasons = ["yield_1", "yield_2", "yield_3", "yield_4"]
 
-fp = r'F:\paper4\cwatm_crop_yield'
+fp = r'./data/cwatm_outputs'
 
 for gcm in os.listdir(fp):
     for ssp in ['ssp126','ssp585']:
 
         kc = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\currentKY_daily_{crop}.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/currentKY_daily_{crop}.nc",
             chunks=chunks,
         ).currentKY[-11322:]
 
         w = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\w_daily.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/w_daily.nc",
             chunks=chunks,
         ).w[-11322:]
 
         spei = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\spei_daily.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/spei_daily.nc",
             engine="h5netcdf",
             chunks=chunks,
         ).spei.transpose("time", "lat", "lon")[-11322:]
@@ -844,7 +844,7 @@ for gcm in os.listdir(fp):
 
             # ✅ 读取 original + smooth，并拼成 version 维度
             ds_y = xr.open_dataset(
-                rf"F:\paper4\cwatm_crop_yield\{gcm}\{ssp}\ratio_{crop}_{arr}.nc",
+                rf"./data/cwatm_outputs/{gcm}/{ssp}/ratio_{crop}_{arr}.nc",
                 chunks=chunks,
             )
 
@@ -877,7 +877,7 @@ for gcm in os.listdir(fp):
 
                 ds_out = xr.Dataset({"normal": nor, "flood": flood, "drought": drought})
 
-                out_dir = rf"F:\paper4\cwatm_crop_yield\{gcm}\{ssp}"
+                out_dir = rf"./data/cwatm_outputs/{gcm}/{ssp}"
                 os.makedirs(out_dir, exist_ok=True)
                 out_path = join(out_dir, f"{season}_{crop}_{arr}.nc")
 
@@ -914,23 +914,23 @@ kcc = {
 chunks = {"time": -1, "lat": 40, "lon": 40}
 seasons = ["yield_1", "yield_2", "yield_3", "yield_4"]
 
-fp = r'F:\paper4\cwatm_crop_yield'
+fp = r'./data/cwatm_outputs'
 
 for gcm in os.listdir(fp):
     for ssp in ['ssp126','ssp585']:
 
         kc = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\currentKY_daily_{crop}.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/currentKY_daily_{crop}.nc",
             chunks=chunks,
         ).currentKY[-11322:]
 
         w = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\w_daily.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/w_daily.nc",
             chunks=chunks,
         ).w[-11322:]
 
         spei = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\spei_daily.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/spei_daily.nc",
             engine="h5netcdf",
             chunks=chunks,
         ).spei.transpose("time", "lat", "lon")[-11322:]
@@ -940,7 +940,7 @@ for gcm in os.listdir(fp):
 
             # ✅ 读取 original + smooth，并拼成 version 维度
             ds_y = xr.open_dataset(
-                rf"F:\paper4\cwatm_crop_yield\{gcm}\{ssp}\ratio_{crop}_{arr}.nc",
+                rf"./data/cwatm_outputs/{gcm}/{ssp}/ratio_{crop}_{arr}.nc",
                 chunks=chunks,
             )
 
@@ -973,7 +973,7 @@ for gcm in os.listdir(fp):
 
                 ds_out = xr.Dataset({"normal": nor, "flood": flood, "drought": drought})
 
-                out_dir = rf"F:\paper4\cwatm_crop_yield\{gcm}\{ssp}"
+                out_dir = rf"./data/cwatm_outputs/{gcm}/{ssp}"
                 os.makedirs(out_dir, exist_ok=True)
                 out_path = join(out_dir, f"{season}_{crop}_{arr}.nc")
 
@@ -1010,23 +1010,23 @@ kcc = {
 chunks = {"time": -1, "lat": 40, "lon": 40}
 seasons = ["yield_1", "yield_2", "yield_3", "yield_4"]
 
-fp = r'F:\paper4\cwatm_crop_yield'
+fp = r'./data/cwatm_outputs'
 
 for gcm in os.listdir(fp):
     for ssp in ['ssp126','ssp585']:
 
         kc = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\currentKY_daily_{crop}.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/currentKY_daily_{crop}.nc",
             chunks=chunks,
         ).currentKY[-11322:]
 
         w = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\w_daily.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/w_daily.nc",
             chunks=chunks,
         ).w[-11322:]
 
         spei = xr.open_dataset(
-            rf"F:\paper4\cwatm_crop_yield_original\{gcm}\{ssp}\spei_daily.nc",
+            rf"./data/cwatm_outputs_raw/{gcm}/{ssp}/spei_daily.nc",
             engine="h5netcdf",
             chunks=chunks,
         ).spei.transpose("time", "lat", "lon")[-11322:]
@@ -1036,7 +1036,7 @@ for gcm in os.listdir(fp):
 
             # ✅ 读取 original + smooth，并拼成 version 维度
             ds_y = xr.open_dataset(
-                rf"F:\paper4\cwatm_crop_yield\{gcm}\{ssp}\ratio_{crop}_{arr}.nc",
+                rf"./data/cwatm_outputs/{gcm}/{ssp}/ratio_{crop}_{arr}.nc",
                 chunks=chunks,
             )
 
@@ -1069,7 +1069,7 @@ for gcm in os.listdir(fp):
 
                 ds_out = xr.Dataset({"normal": nor, "flood": flood, "drought": drought})
 
-                out_dir = rf"F:\paper4\cwatm_crop_yield\{gcm}\{ssp}"
+                out_dir = rf"./data/cwatm_outputs/{gcm}/{ssp}"
                 os.makedirs(out_dir, exist_ok=True)
                 out_path = join(out_dir, f"{season}_{crop}_{arr}.nc")
 

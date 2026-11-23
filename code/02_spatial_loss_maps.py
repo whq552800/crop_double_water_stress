@@ -282,7 +282,7 @@ def draw(xx,nam):
     plt.tight_layout()
     
     # plt.savefig(
-    #     rf"D:\AAUDE\paper\paper4\revision_v2\fig\manu_fig\hist_allcrops_{nam}_loss.pdf",
+    #     rf"./outputs/figures/hist_allcrops_{nam}_loss.pdf",
     #     dpi=300,
     #     bbox_inches="tight"
     # )
@@ -421,7 +421,7 @@ def draw_map(xx, crop, haz, out_dir):
 
 # %% cell 17
 year_sel_hist = slice(1980, 2019)
-out_dir = r"D:\AAUDE\paper\paper4\revision_v2\fig\manu_fig"
+out_dir = r"./outputs/figures"
 
 crops = ("maiz", "soyb", "rice", "whea")
 hazs  = ("dry", "wet")
@@ -610,7 +610,7 @@ crops = ("maiz", "soyb", "rice", "whea")
 hazs  = ("dry", "wet")
 year_slice = slice(2070, 2100)
 
-out_dir = r"D:\AAUDE\paper\paper4\revision_v2\fig\manu_fig"
+out_dir = r"./outputs/figures"
 
 for scen in ("ssp126", "ssp585"):
     maps = {}
@@ -719,12 +719,12 @@ def plot_from_cache(ds, out_pdf=None):
 
 
 # ======= 读取缓存并画图 =======
-cache_fp = r"D:\AAUDE\paper\paper4\revision_v2\fig\cache_loss_timeseries_4crops.nc"
+cache_fp = r".\fig\cache_loss_timeseries_4crops.nc"
 ds = xr.open_dataset(cache_fp)
 
 fig, axes = plot_from_cache(
     ds,
-    out_pdf=r"D:\AAUDE\paper\paper4\revision_v2\fig\future\fig_loss_timeseries_4crops.pdf"
+    out_pdf=r".\fig\future\fig_loss_timeseries_4crops.pdf"
 )
 
 # %% cell 20
@@ -856,7 +856,7 @@ gcms = [
 year_sel_hist   = slice(1980, 2019)
 year_sel_future = slice(2060, 2100)
 
-OUT_DIR = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps"
+OUT_DIR = r"./outputs/figures/loss_maps"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 
@@ -1064,8 +1064,8 @@ vmin, vmax = 0.0, 8.0                       # 你给的 0-8
 norm = mcolors.Normalize(vmin=vmin, vmax=vmax)
 
 # 输入 nc
-hist_nc = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_hist_1980_2019.nc"
-fut_nc  = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_future_2060_2100_ensemble_mean.nc"
+hist_nc = r"./outputs/figures/loss_maps/loss_hist_1980_2019.nc"
+fut_nc  = r"./outputs/figures/loss_maps/loss_future_2060_2100_ensemble_mean.nc"
 # 如果你没有 ensemble_mean nc，而是 by_gcm：
 # fut_by_gcm_nc = r"...\loss_future_2070_2100_by_gcm.nc"
 
@@ -1173,7 +1173,7 @@ cb = fig.colorbar(
 cb.set_label("Yield loss (%)")
 
 # 保存 / 显示
-out_pdf = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\Fig_loss_8x3_crops_hazards.pdf"
+out_pdf = r"./outputs/figures/loss_maps/Fig_loss_8x3_crops_hazards.pdf"
 fig.savefig(out_pdf, dpi=300, bbox_inches="tight")
 plt.show()
 
@@ -1216,12 +1216,12 @@ vmin, vmax = 0.0, 8.0
 norm = mcolors.Normalize(vmin=vmin, vmax=vmax)
 
 # 输入 nc
-hist_nc = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_hist_1980_2019.nc"
-fut_nc  = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_future_2060_2100_ensemble_mean.nc"
+hist_nc = r"./outputs/figures/loss_maps/loss_hist_1980_2019.nc"
+fut_nc  = r"./outputs/figures/loss_maps/loss_future_2060_2100_ensemble_mean.nc"
 
 # 输出
-out_nc  = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_cropmean_3scen_2haz.nc"
-out_pdf = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\Fig_loss_cropmean_2x3.pdf"
+out_nc  = r"./outputs/figures/loss_maps/loss_cropmean_3scen_2haz.nc"
+out_pdf = r"./outputs/figures/loss_maps/Fig_loss_cropmean_2x3.pdf"
 
 # =========================
 # 1) 读入并拼接为统一：loss(scen,crop,haz,lat,lon)
@@ -1343,7 +1343,7 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 0) 配置
 # =========================
-nc_fp   = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_cropmean_3scen_2haz.nc"
+nc_fp   = r"./outputs/figures/loss_maps/loss_cropmean_3scen_2haz.nc"
 varname = "loss_pct_cropmean"   # 你保存nc时的变量名
 
 hazards     = ["dry", "wet"]
@@ -1355,7 +1355,7 @@ scen_labels = {"ssp126":"SSP1-2.6", "ssp585":"SSP5-8.5"}
 # 两情景颜色（你也可以换成自己论文配色）
 scen_colors = {"ssp126":"#5AB4AF", "ssp585":"#F8DB71"}
 
-out_pdf = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\Fig_lat_mirror_delta_future_minus_hist.pdf"
+out_pdf = r"./outputs/figures/loss_maps/Fig_lat_mirror_delta_future_minus_hist.pdf"
 
 # =========================
 # 1) 读取 & 计算 Δ(未来-历史) 的纬向平均
@@ -1508,13 +1508,13 @@ vmin, vmax = 0.0, 8.0
 norm = mcolors.Normalize(vmin=vmin, vmax=vmax)
 
 # 输入 nc
-hist_nc = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_hist_1980_2019.nc"
-fut_nc  = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_future_2070_2100_ensemble_mean.nc"
+hist_nc = r"./outputs/figures/loss_maps/loss_hist_1980_2019.nc"
+fut_nc  = r"./outputs/figures/loss_maps/loss_future_2070_2100_ensemble_mean.nc"
 
 
 # 输出
-out_nc  = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_cropmean_area_weighted_3scen_2haz.nc"
-out_pdf = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\Fig_loss_cropmean_area_weighted_2x3.pdf"
+out_nc  = r"./outputs/figures/loss_maps/loss_cropmean_area_weighted_3scen_2haz.nc"
+out_pdf = r"./outputs/figures/loss_maps/Fig_loss_cropmean_area_weighted_2x3.pdf"
 
 # =========================
 # 1) 读入 loss 并拼接为统一：loss(scen,crop,haz,lat,lon)
@@ -1677,7 +1677,7 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 0) 配置
 # =========================
-nc_fp   = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_cropmean_area_weighted_3scen_2haz.nc"
+nc_fp   = r"./outputs/figures/loss_maps/loss_cropmean_area_weighted_3scen_2haz.nc"
 varname = "loss_pct_cropmean_areaW"   # 你保存nc时的变量名
 
 hazards     = ["dry", "wet"]
@@ -1689,7 +1689,7 @@ scen_labels = {"ssp126":"SSP1-2.6", "ssp585":"SSP5-8.5"}
 # 两情景颜色（你也可以换成自己论文配色）
 scen_colors = {"ssp126":"#5AB4AF", "ssp585":"#F8DB71"}
 
-out_pdf = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\Fig_lat_mirror_delta_future_minus_hist.pdf"
+out_pdf = r"./outputs/figures/loss_maps/Fig_lat_mirror_delta_future_minus_hist.pdf"
 
 # =========================
 # 1) 读取 & 计算 Δ(未来-历史) 的纬向平均
@@ -1824,7 +1824,7 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 0) 配置
 # =========================
-nc_fp   = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_cropmean_area_weighted_3scen_2haz.nc"  # <-- 你的nc
+nc_fp   = r"./outputs/figures/loss_maps/loss_cropmean_area_weighted_3scen_2haz.nc"  # <-- 你的nc
 varname = "loss_pct_cropmean_areaW"  # <-- 你保存nc时的变量名
 
 fut_scen = ["ssp126", "ssp585"]
@@ -1842,7 +1842,7 @@ ASPECT = 1.3
 # 发散色带（差值图）
 cmap = plt.get_cmap("RdBu_r")
 
-out_pdf = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\Fig_spatial_delta_areaW_future_minus_hist_2x2.pdf"
+out_pdf = r"./outputs/figures/loss_maps/Fig_spatial_delta_areaW_future_minus_hist_2x2.pdf"
 
 # =========================
 # 1) 读取 & 计算空间差值
@@ -1957,7 +1957,7 @@ mpl.rcParams["axes.unicode_minus"] = False
 # =========================
 # 0) 配置
 # =========================
-nc_fp   = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\loss_cropmean_area_weighted_3scen_2haz.nc"
+nc_fp   = r"./outputs/figures/loss_maps/loss_cropmean_area_weighted_3scen_2haz.nc"
 varname = "loss_pct_cropmean_areaW"
 
 fut_scen = ["ssp126", "ssp585"]
@@ -1980,7 +1980,7 @@ over_color = "#67000d"
 
 little_change_color = "0.35"  # 深灰（只画在作物区且 Δ<=0.5 的像元）
 
-out_pdf = r"D:\AAUDE\paper_v2\paper4\outputs_loss_maps\Fig_spatial_delta_bins_legend_thresh05_masked.pdf"
+out_pdf = r"./outputs/figures/loss_maps/Fig_spatial_delta_bins_legend_thresh05_masked.pdf"
 
 # =========================
 # 1) 读取差值
